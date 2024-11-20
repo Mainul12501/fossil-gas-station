@@ -15,38 +15,38 @@
 {{--                        <span class="badge rounded-pill bg-info ms-auto mr-3">3</span>--}}
                     </a>
                 </li>
-{{--                <li class="sidebar-item">--}}
-{{--                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">--}}
-{{--                        <i class="mdi mdi-account-multiple-outline"></i>--}}
-{{--                        <span class="hide-menu">User Management </span>--}}
-{{--                    </a>--}}
-{{--                    <ul aria-expanded="false" class="collapse first-level">--}}
-{{--                        <li class="sidebar-item">--}}
-{{--                            <a href="{{ route('permission-categories.index') }}" class="sidebar-link">--}}
-{{--                                <i class="mdi mdi-view-quilt"></i>--}}
-{{--                                <span class="hide-menu"> Permission Category </span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="sidebar-item">--}}
-{{--                            <a href="{{ route('permissions.index') }}" class="sidebar-link">--}}
-{{--                                <i class="mdi mdi-view-parallel"></i>--}}
-{{--                                <span class="hide-menu"> Permissions </span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="sidebar-item">--}}
-{{--                            <a href="{{ route('roles.index') }}" class="sidebar-link">--}}
-{{--                                <i class="mdi mdi-account-key"></i>--}}
-{{--                                <span class="hide-menu"> Role </span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                        <li class="sidebar-item">--}}
-{{--                            <a href="sidebar-type-fullsidebar.html.htm" class="sidebar-link">--}}
-{{--                                <i class="mdi mdi-account"></i>--}}
-{{--                                <span class="hide-menu"> User </span>--}}
-{{--                            </a>--}}
-{{--                        </li>--}}
-{{--                    </ul>--}}
-{{--                </li>--}}
+                <li class="sidebar-item">
+                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                        <i class="mdi mdi-account-multiple-outline"></i>
+                        <span class="hide-menu">User Management </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse first-level">
+                        <li class="sidebar-item">
+                            <a href="{{ route('permission-categories.index') }}" class="sidebar-link">
+                                <i class="mdi mdi-view-quilt"></i>
+                                <span class="hide-menu"> Permission Category </span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="{{ route('permissions.index') }}" class="sidebar-link">
+                                <i class="mdi mdi-view-parallel"></i>
+                                <span class="hide-menu"> Permissions </span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="{{ route('roles.index') }}" class="sidebar-link">
+                                <i class="mdi mdi-account-key"></i>
+                                <span class="hide-menu"> Role </span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a href="sidebar-type-fullsidebar.html.htm" class="sidebar-link">
+                                <i class="mdi mdi-account"></i>
+                                <span class="hide-menu"> User </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                         <i class="mdi mdi-crop-square"></i>

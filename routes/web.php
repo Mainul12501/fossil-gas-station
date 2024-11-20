@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\ViewControllers\FrontendViewController;
 use App\Http\Controllers\Backend\ViewControllers\BackendViewController;
+use App\Http\Controllers\Backend\RolePermissionManagement\Role\RoleController;
+use App\Http\Controllers\Backend\RolePermissionManagement\Permission\PermissionController;
+use App\Http\Controllers\Backend\RolePermissionManagement\Permission\PermissionCategoryController;
 
 Route::get('/', [FrontendViewController::class, 'home'])->name('home');
 Route::get('/about-us', [FrontendViewController::class, 'about'])->name('about');
@@ -17,5 +20,9 @@ Route::middleware([
     'verified',
 ])->group(function () {
     Route::get('/dashboard', [BackendViewController::class, 'dashboard'])->name('dashboard');
-
+    Route::resources([
+        'permission-categories' => PermissionCategoryController::class,
+        'permissions'   => PermissionController::class,
+        'roles'     => RoleController::class,
+    ]);
 });
