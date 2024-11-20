@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\ViewControllers\FrontendViewController;
+use App\Http\Controllers\Backend\ViewControllers\BackendViewController;
 
 Route::get('/', [FrontendViewController::class, 'home'])->name('home');
 Route::get('/about-us', [FrontendViewController::class, 'about'])->name('about');
@@ -15,7 +16,6 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', [BackendViewController::class, 'dashboard'])->name('dashboard');
+
 });
