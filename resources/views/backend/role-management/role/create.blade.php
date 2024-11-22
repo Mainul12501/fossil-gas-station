@@ -1,6 +1,7 @@
 @extends('backend.master')
 
 @section('title', 'Permissions')
+@section('breadcrumb', 'Permissions')
 
 @section('body')
     <div class="configCode">

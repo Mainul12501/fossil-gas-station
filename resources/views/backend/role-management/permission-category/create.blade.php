@@ -1,6 +1,7 @@
 @extends('backend.master')
 
 @section('title', 'Permission Categories')
+@section('breadcrumb', 'Permission Categories')
 
 @section('body')
     <div class="row py-5">

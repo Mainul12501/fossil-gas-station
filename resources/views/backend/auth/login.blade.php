@@ -64,7 +64,8 @@
                             @csrf
                             <div class="form-group mb-3">
                                 <div class="">
-                                    <input class="form-control" type="text" name="mobile" required="" placeholder="Mobile">
+{{--                                    <input class="form-control" type="text" name="mobile" required="" placeholder="Mobile">--}}
+                                    <input class="form-control" type="text" name="email" required="" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group mb-4">

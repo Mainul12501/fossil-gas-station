@@ -21,6 +21,8 @@
 <link href="{{ asset('/') }}frontend/assets/css/style.css" rel="stylesheet">
 <!-- Responsive CSS -->
 <link href="{{ asset('/') }}frontend/assets/css/responsive.css" rel="stylesheet">
+<!-- Toastr CSS -->
+<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
 
 @yield('style')
 @stack('style')

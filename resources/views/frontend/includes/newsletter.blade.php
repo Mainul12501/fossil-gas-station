@@ -5,8 +5,9 @@
                 <h2 class="text-white">Subscribe newsletter <br> For Any Update</h2>
             </div>
             <div class="subscribed-form d-flex">
-                <form action="#">
-                    <input type="email" placeholder="Enter Your Mail">
+                <form action="{{ route('newsletters.store') }}" method="post">
+                    @csrf
+                    <input type="email" name="email" placeholder="Enter Your Mail">
                     <input type="submit" value="Subscribe Now">
                 </form>
             </div>

@@ -20,6 +20,9 @@
 <script src="{{ asset('/') }}frontend/assets/js/jquery.barfiller.js"></script>
 <!-- Main JS -->
 <script src="{{ asset('/') }}frontend/assets/js/main.js"></script>
+<!-- Toastr JS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
+{!! Toastr::message() !!}
 @yield('script')
 @stack('script')

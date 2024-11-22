@@ -3,9 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\ViewControllers\FrontendViewController;
 use App\Http\Controllers\Backend\ViewControllers\BackendViewController;
+
 use App\Http\Controllers\Backend\RolePermissionManagement\Role\RoleController;
 use App\Http\Controllers\Backend\RolePermissionManagement\Permission\PermissionController;
 use App\Http\Controllers\Backend\RolePermissionManagement\Permission\PermissionCategoryController;
+
+use App\Http\Controllers\Backend\CommonCrudControllers\NewsletterController;
+use App\Http\Controllers\Backend\CommonCrudControllers\HomePageSliderController;
+
+use App\Http\Controllers\Backend\GasStationControllers\EmployeeRoleController;
+use App\Http\Controllers\Backend\GasStationControllers\GasStationEmployeeController;
+use App\Http\Controllers\Backend\GasStationControllers\GasStationController;
 
 Route::get('/', [FrontendViewController::class, 'home'])->name('home');
 Route::get('/about-us', [FrontendViewController::class, 'about'])->name('about');
@@ -24,5 +32,12 @@ Route::middleware([
         'permission-categories' => PermissionCategoryController::class,
         'permissions'   => PermissionController::class,
         'roles'     => RoleController::class,
+
+        'home-sliders' => HomePageSliderController::class,
+        'newsletters'   => NewsletterController::class,
+
+        'employee-roles'    => EmployeeRoleController::class,
+        'gas-station-employees' => GasStationEmployeeController::class,
+        'gas-stations'  => GasStationController::class
     ]);
 });

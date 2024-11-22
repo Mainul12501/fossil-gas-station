@@ -39,70 +39,39 @@
                                 <span class="hide-menu"> Role </span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="sidebar-type-fullsidebar.html.htm" class="sidebar-link">
-                                <i class="mdi mdi-account"></i>
-                                <span class="hide-menu"> User </span>
-                            </a>
-                        </li>
+{{--                        <li class="sidebar-item">--}}
+{{--                            <a href="sidebar-type-fullsidebar.html.htm" class="sidebar-link">--}}
+{{--                                <i class="mdi mdi-account"></i>--}}
+{{--                                <span class="hide-menu"> User </span>--}}
+{{--                            </a>--}}
+{{--                        </li>--}}
                     </ul>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                         <i class="mdi mdi-crop-square"></i>
-                        <span class="hide-menu">Page Layouts </span>
+                        <span class="hide-menu">Gas Stations </span>
                     </a>
                     <ul aria-expanded="false" class="collapse first-level">
                         <li class="sidebar-item">
-                            <a href="layout-inner-fixed-left-sidebar.html.htm" class="sidebar-link">
+                            <a href="{{ route('employee-roles.index') }}" class="sidebar-link">
                                 <i class="mdi mdi-format-align-left"></i>
-                                <span class="hide-menu"> Inner Fixed Left Sidebar </span>
+                                <span class="hide-menu"> Employee Role </span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="layout-inner-fixed-right-sidebar.html.htm" class="sidebar-link">
+                            <a href="{{ route('gas-station-employees.index') }}" class="sidebar-link">
                                 <i class="mdi mdi-format-align-right"></i>
-                                <span class="hide-menu"> Inner Fixed Right Sidebar </span>
+                                <span class="hide-menu"> Gas Station Employee </span>
                             </a>
                         </li>
                         <li class="sidebar-item">
                             <a href="layout-inner-left-sidebar.html.htm" class="sidebar-link">
                                 <i class="mdi mdi-format-float-left"></i>
-                                <span class="hide-menu"> Inner Left Sidebar </span>
+                                <span class="hide-menu"> Gas Station </span>
                             </a>
                         </li>
-                        <li class="sidebar-item">
-                            <a href="layout-inner-right-sidebar.html.htm" class="sidebar-link">
-                                <i class="mdi mdi-format-float-right"></i>
-                                <span class="hide-menu"> Inner Right Sidebar </span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="page-layout-fixed-header.html.htm" class="sidebar-link">
-                                <i class="mdi mdi-view-quilt"></i>
-                                <span class="hide-menu"> Fixed Header </span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="page-layout-fixed-sidebar.html.htm" class="sidebar-link">
-                                <i class="mdi mdi-view-parallel"></i>
-                                <span class="hide-menu"> Fixed Sidebar </span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="page-layout-fixed-header-sidebar.html.htm" class="sidebar-link">
-                                <i class="mdi mdi-view-column"></i>
-                                <span class="hide-menu">
-                        Fixed Header &amp; Sidebar
-                      </span>
-                            </a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="page-layout-boxed-layout.html.htm" class="sidebar-link">
-                                <i class="mdi mdi-view-carousel"></i>
-                                <span class="hide-menu"> Box Layout </span>
-                            </a>
-                        </li>
+
                     </ul>
                 </li>
                 <li class="nav-small-cap">
@@ -110,10 +79,10 @@
                     <span class="hide-menu">Apps</span>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-chats.html.htm" aria-expanded="false"><i class="mdi mdi-comment-processing-outline"></i><span class="hide-menu">Chat Apps</span></a>
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('newsletters.index') }}" aria-expanded="false"><i class="mdi mdi-comment-processing-outline"></i><span class="hide-menu">Newsletter</span></a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-todo.html.htm" aria-expanded="false"><i class="mdi mdi-clipboard-text"></i><span class="hide-menu">Todo</span></a>
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('home-sliders.index') }}" aria-expanded="false"><i class="mdi mdi-clipboard-text"></i><span class="hide-menu">Home Page Slider</span></a>
                 </li>
                 <li class="sidebar-item">
                     <a class="sidebar-link waves-effect waves-dark sidebar-link" href="app-calendar.html.htm" aria-expanded="false"><i class="mdi mdi-calendar"></i><span class="hide-menu">Calendar</span></a>
