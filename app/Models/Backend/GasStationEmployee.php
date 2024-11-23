@@ -56,7 +56,7 @@ class GasStationEmployee extends Model
             'x' => $request->x,
             'linkedin' => $request->linkedin,
             'status' => $request->status == 'on' ? 1 : 0,
-            'slug' => str_replace(' ', '-', $request->name).'-'.(!isset($id) ? static::latest()->first()->id+1 : static::find($id)->id),
+            'slug' => str_replace(' ', '-', $request->name).'-'.(!isset($id) ? (static::latest()->first()->id ?? 0)+1 : static::find($id)->id),
             'seo_header' => $request->seo_header,
             'seo_footer' => $request->seo_footer,
             'overview' => $request->overview,

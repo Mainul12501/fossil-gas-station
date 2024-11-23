@@ -10,11 +10,11 @@
                 <div class="card card-hover">
                     <div class="card-header bg-info">
                         <h4 class="text-white float-start">Station Employee</h4>
-                        @can('create-permission-category')
+{{--                        @can('create-permission-category')--}}
                             <a href="{{ route('gas-station-employees.create') }}" class="rounded-circle float-end text-white text-light f-s-20 ">
                                 <span class="f-s-22 border-5"><i class="mdi mdi-plus-circle-outline"></i></span>
                             </a>
-                        @endcan
+{{--                        @endcan--}}
                     </div>
                     <div class="card-body">
                         <table class="table" id="dataTable">

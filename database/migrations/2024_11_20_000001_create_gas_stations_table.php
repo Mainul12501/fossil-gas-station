@@ -41,6 +41,10 @@ return new class extends Migration {
             $table->text('seo_footer')->nullable();
             $table->string('logo')->nullable();
             $table->string('main_image')->nullable();
+            $table->string('office_email_1')->nullable();
+            $table->string('office_email_2')->nullable();
+            $table->string('office_email_3')->nullable();
+            $table->string('office_phone_number_2')->nullable();
 
             $table->timestamps();
         });

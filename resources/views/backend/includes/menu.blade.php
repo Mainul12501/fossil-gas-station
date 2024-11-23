@@ -66,7 +66,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="layout-inner-left-sidebar.html.htm" class="sidebar-link">
+                            <a href="{{ route('gas-stations.index') }}" class="sidebar-link">
                                 <i class="mdi mdi-format-float-left"></i>
                                 <span class="hide-menu"> Gas Station </span>
                             </a>
