@@ -21,6 +21,8 @@ Route::get('/services', [FrontendViewController::class, 'services'])->name('serv
 Route::get('/contact-us', [FrontendViewController::class, 'contactUs'])->name('contact-us');
 Route::get('/gas', [FrontendViewController::class, 'gasDetails'])->name('gas-details');
 
+Route::post('/new-contact', [FrontendViewController::class, 'newContact'])->name('new-contact');
+
 
 Route::middleware([
     'auth:sanctum',

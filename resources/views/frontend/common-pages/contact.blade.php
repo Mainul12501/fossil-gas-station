@@ -75,22 +75,23 @@
                             <h2>Get in <b>Touch</b></h2>
                         </div>
                         <div class="contact-form">
-                            <form action="https://capricorn-theme.com/html/fossil/index.html">
+                            <form action="{{ route('new-contact') }}" method="post">
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" placeholder="Your Name">
+                                        <input type="text" placeholder="Your Name" name="name" required />
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="email" placeholder="E-mail">
+                                        <input type="email" placeholder="E-mail" name="email" required >
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="tel" placeholder="Phone Number">
+                                        <input type="tel" placeholder="Phone Number" name="phone">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" placeholder="Subject">
+                                        <input type="text" placeholder="Subject" name="subject">
                                     </div>
                                     <div class="col-lg-12">
-                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message"></textarea>
+                                        <textarea name="message" id="message"  cols="30" rows="10" placeholder="Write Message"></textarea>
                                     </div>
                                     <div class="col-lg-12 col-md-6 col-12 text-center">
                                         <button class="main-btn">Get A Quote</button>
