@@ -19,7 +19,7 @@ class GasStationController extends Controller
         {
             $gasStations = GasStation::where('gas_station_id', $request->station)->latest()->get();
         } else {
-            $gasStations = GasStation::latest()->get();
+            $gasStations = GasStation::where('gas_station_id', 0)->latest()->get();
         }
         return view('backend.gas-station.station.index', ['gasStations' => $gasStations]);
     }

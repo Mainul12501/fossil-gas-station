@@ -1,7 +1,7 @@
 /*
-Template Name: Fossil 
+Template Name: Fossil
 Template URI: http://capricorn-theme.com/html/fossil
-Description: EV Charging & Gas Station HTML Template 
+Description: EV Charging & Gas Station HTML Template
 Author: Mihir Kanti Ghosh
 Author URI: mihir@capricorn-theme.net
 Version: 1.0
@@ -10,64 +10,65 @@ Version: 1.0
 /* CSS Index
 ============
 
-## Google Font Import 
+## Google Font Import
 ## Common CSS
-## Bacground Color & Overlay 
+## Bacground Color & Overlay
 ## Pre-loader
-## Scroll Top 
-## Sticky 
+## Scroll Top
+## Sticky
 ## Header Top Area
-## Header Area  
-## Main Menu 
-## Slider CSS 
-## Promo Area 
-## About Seciton # 01 
+## Header Area
+## Main Menu
+## Slider CSS
+## Promo Area
+## About Seciton # 01
 ## Service Section # 01
 ## Xtra Service Section
 ## Achievement Section
-## FAQ Section 
+## FAQ Section
 ## Facility Section
 
-## Blog Section 
-## Sponsor Section 
+## Blog Section
+## Sponsor Section
 ## Footer Area
 
 ## About Section # 02
-## Service Section # 02  
+## Service Section # 02
 ## Achievement Section # 02
 ## Choose Us Section
-## Quotation Section 
-## Pricing Section 
+## Quotation Section
+## Pricing Section
 
-## About Section # 03  
+## About Section # 03
 ## Feature Section
 ## CTA Section
 ## Choose Us Section # 02
-## Team Section 
-## Testimonial Section 
+## Team Section
+## Testimonial Section
 
-## Contact Section 
+## Contact Section
 ## Breadcrumb Section
-## Choose Us Page 
-## Team Page 
+## Choose Us Page
+## Team Page
 ## Price Page
-## FAQ Page 
-## Blog Classic Page 
-## Single Service Page 
-## Single Blog Page 
-## Contact Page 
+## FAQ Page
+## Blog Classic Page
+## Single Service Page
+## Single Blog Page
+## Contact Page
 
 
-/* Google Font Import 
+/* Google Font Import
 ======================= */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&amp;display=swap");
 
 
-/*	Theme Color: #41CB5B
+/*	Old Theme Color: #41CB5B
+	New Theme Color: orange
 	Primary Color: #162232*/
 
-/* Common CSS 
+/* Common CSS
 ============== */
 
 html,
@@ -118,7 +119,7 @@ a {
 	text-decoration: none;
 	cursor: pointer;
 	font-family: 'Outfit', sans-serif;
-	color: #41CB5B;
+	color: orange;
 	font-size: 16px;
 	-webkit-transition: 0.5s;
 	transition: 0.5s;
@@ -425,7 +426,7 @@ hr {
 
 .section-title h6 {
 	display: inline-block;
-	color: #41CB5B;
+	color: orange;
 	font-family: 'Outfit', sans-serif;
 	font-size: 15px;
 	font-weight: 500;
@@ -443,7 +444,7 @@ hr {
 	height: 2px;
 	left: 0;
 	top: 50%;
-	background: #41CB5B;
+	background: orange;
 	margin-top: -1px;
 }
 
@@ -452,7 +453,7 @@ hr {
 
 .main-btn {
 	display: inline-block;
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 	font-size: 16px;
 	font-weight: 500;
@@ -510,7 +511,7 @@ button[type="submit"] {
 	border: none;
 	border-radius: 4px;
 	display: inline-block;
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 	padding: 15px 30px;
 	margin: 30px 0;
@@ -540,7 +541,7 @@ textarea:focus::-webkit-input-placeholder {
 	padding: 0;
 }
 
-/* Bacground Color & Overlay CSS 
+/* Bacground Color & Overlay CSS
 ============== */
 
 .sky-bg {
@@ -560,7 +561,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .green-bg {
-	background: #41CB5B;
+	background: orange;
 }
 
 
@@ -607,7 +608,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 
-/* Pre-Loader CSS 
+/* Pre-Loader CSS
 ============== */
 #loader {
 	display: -webkit-box;
@@ -624,7 +625,7 @@ textarea:focus::-webkit-input-placeholder {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #41CB5B;
+	background-color: orange;
 	z-index: 999999;
 }
 
@@ -683,10 +684,10 @@ textarea:focus::-webkit-input-placeholder {
 	}
 }
 
-/* Scroll Top 
+/* Scroll Top
 ============== */
 .go-top {
-	background-color: #41CB5B;
+	background-color: orange;
 	color: #FFF;
 	width: 40px;
 	height: 40px;
@@ -730,7 +731,7 @@ textarea:focus::-webkit-input-placeholder {
 	color: #020E28;
 }
 
-/* Sticky CSS 
+/* Sticky CSS
 ============== */
 
 .header-area .is-sticky .sticky-area {
@@ -775,7 +776,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .contact-info i {
-	color: #41CB5B;
+	color: orange;
 	font-size: 20px;
 	margin-right: 2px;
 }
@@ -801,7 +802,7 @@ textarea:focus::-webkit-input-placeholder {
 
 
 
-/* Header Area 
+/* Header Area
 ============== */
 
 #header-2.header-area {
@@ -857,15 +858,15 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .header-area .main-menu .navbar-nav .nav-link.active {
-	color: #41CB5B;
+	color: orange;
 }
 
 #header-2.header-area .main-menu .navbar-nav .nav-link.active {
-	color: #41CB5B;
+	color: orange;
 }
 
 #header-3.header-area .main-menu .navbar-nav .nav-link.active {
-	color: #41CB5B;
+	color: orange;
 }
 
 .header-area .main-menu li.nav-item:hover > a {
@@ -1092,7 +1093,7 @@ textarea:focus::-webkit-input-placeholder {
 	position: relative;
 	z-index: 1;
 	font-size: 30px;
-	color: #41CB5B;
+	color: orange;
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
@@ -1134,7 +1135,7 @@ textarea:focus::-webkit-input-placeholder {
 	border: 0;
 }
 
-/* Main Menu 
+/* Main Menu
 ============== */
 
 .main-menu .navbar {
@@ -1199,7 +1200,7 @@ textarea:focus::-webkit-input-placeholder {
 	height: 4px;
 	top: 0;
 	left: 0;
-	background: #41CB5B;
+	background: orange;
 	visibility: hidden;
 	opacity: 0;
 }
@@ -1243,7 +1244,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .main-menu .sub-menu li:hover > a {
-	color: #41CB5B;
+	color: orange;
 }
 
 .dropdown-toggle::after {
@@ -1255,7 +1256,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 
-/* Slider CSS 
+/* Slider CSS
 ==================*/
 
 .single-slide-item {
@@ -1322,7 +1323,7 @@ textarea:focus::-webkit-input-placeholder {
 	height: 1px;
 	left: 0;
 	top: 50%;
-	background: #41CB5B;
+	background: orange;
 	margin-top: -1px;
 }
 
@@ -1378,9 +1379,9 @@ textarea:focus::-webkit-input-placeholder {
 
 .homepage-slides .owl-nav button.owl-prev:hover,
 .homepage-slides .owl-nav button.owl-next:hover {
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
-	border-color: #41CB5B;
+	border-color: orange;
 	opacity: 1;
 }
 
@@ -1432,7 +1433,7 @@ textarea:focus::-webkit-input-placeholder {
 .promo-area .single-counter-box .counter-number span {
 	font-size: 50px;
 	font-weight: 500;
-	color: #41CB5B;
+	color: orange;
 	font-family: 'Teko';
 	letter-spacing: 2px;
 	background: #ddd;
@@ -1452,7 +1453,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 
-/* About Seciton # 01 
+/* About Seciton # 01
 ============== */
 
 .info-content-area .section-title h2 {
@@ -1470,7 +1471,7 @@ p.highlight i {
     top: 0;
     left: 0;
     font-size: 24px;
-    color: #41CB5B;
+    color: orange;
 }
 
 /* .info-content-area p.highlight:before {
@@ -1485,15 +1486,15 @@ p.highlight i {
 
 .info-content-area .main-btn {
 	background: transparent;
-	color: #41CB5B;
+	color: orange;
 	border: 2px solid;
 	margin: 40px 0;
 }
 
 .info-content-area .main-btn:hover {
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
-	border-color: #41CB5B;
+	border-color: orange;
 }
 
 .founded {
@@ -1514,7 +1515,7 @@ p.highlight i {
 	font-size: 140px;
 	font-weight: 600;
 	line-height: 120px;
-	background-color: #41CB5B;
+	background-color: orange;
 	background-image: url(../img/trans-bg.html);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1530,7 +1531,7 @@ p.highlight i {
 	font-weight: 300;
 	line-height: 34px;
 	letter-spacing: 1px;
-	color: #41CB5B;
+	color: orange;
 	border-left: 5px solid #eee;
 	padding-left: 35px;
 	margin-top: 25px;
@@ -1548,7 +1549,7 @@ p.highlight i {
 .experience-wrap {
 	width: 200px;
 	height: 200px;
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 	display: inline-flex;
 	align-items: center;
@@ -1636,7 +1637,7 @@ p.highlight i {
 }
 
 .single-serv-item a:hover {
-	color: #41CB5B;
+	color: orange;
 	opacity: .8;
 }
 
@@ -1649,7 +1650,7 @@ p.highlight i {
 }
 
 .single-serv-item.active .serv-icon i:before {
-	color: #41CB5B;
+	color: orange;
 }
 
 .single-serv-item.active .serv-content {
@@ -1657,7 +1658,7 @@ p.highlight i {
 }
 
 .single-serv-item:hover .serv-icon i:before {
-	color: #41CB5B;
+	color: orange;
 }
 
 /* Xtra Service Section
@@ -1717,7 +1718,7 @@ p.highlight i {
 	position: absolute;
 	bottom: 25px;
 	left: 25px;
-	color: #41CB5B;
+	color: orange;
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 500;
@@ -1889,7 +1890,7 @@ p.highlight i {
 .pop-up-video a.video-play-btn {
 	font-size: 20px;
 	color: #fff;
-	border: 2px solid #41CB5B;
+	border: 2px solid orange;
 	border-radius: 50%;
 	padding: 15px;
 	width: 70px;
@@ -1901,7 +1902,7 @@ p.highlight i {
 	left: 50%;
 	margin-left: -35px;
 	margin-top: -35px;
-	background: #41CB5B;
+	background: orange;
 	cursor: pointer;
 	z-index: 9;
 }
@@ -1938,7 +1939,7 @@ p.highlight i {
 	animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
 }
 
-/* FAQ Section 
+/* FAQ Section
 ============== */
 
 .faq-bg {
@@ -1999,12 +2000,12 @@ p.highlight i {
 
 .styled-faq .panel .panel-heading h6 a[aria-expanded=true] i.fa.fa-angle-up {
 	display: block;
-	color: #41CB5B;
+	color: orange;
 }
 facility
 .styled-faq .panel .panel-heading h6 a[aria-expanded=false] i.fa.fa-angle-down {
 	display: block;
-	color: #41CB5B;
+	color: orange;
 }
 
 
@@ -2075,7 +2076,7 @@ facility
 	color: #cecece;
 }
 
-/* Blog Section 
+/* Blog Section
 ============== */
 
 .blog-area .single-blog-item {
@@ -2122,7 +2123,7 @@ facility
 }
 
 .blog-area .blog-content h5 a:hover {
-	color: #41CB5B;
+	color: orange;
 }
 
 .blog-area a.read-more {
@@ -2130,7 +2131,7 @@ facility
 	font-size: 16px;
 	font-weight: 500;
 	margin: 10px 0 0;
-	color: #41CB5B;
+	color: orange;
 }
 
 .blog-area a.read-more:hover {
@@ -2149,7 +2150,7 @@ facility
 }
 
 .blog-area .blog-bg span {
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 	padding: 10px;
 	display: inline-block;
@@ -2166,7 +2167,7 @@ facility
 	border-radius: 5px;
 }
 
-/* Sponsor Section 
+/* Sponsor Section
 ============== */
 
 .single-logo-wrapper {
@@ -2194,7 +2195,7 @@ facility
 ============== */
 
 .cta-area {
-	background: #41CB5B;
+	background: orange;
 	height: 250px;
 	display: flex;
 	justify-content: center;
@@ -2256,7 +2257,7 @@ facility
 
 .newsletter-content {
 	height: 250px;
-	background: #41CB5B;
+	background: orange;
 	padding: 50px;
 	border-radius: 5px;
 	position: relative;
@@ -2279,7 +2280,7 @@ facility
 	  text-align: center;
 	}
   }
-  
+
   .newsletter-content h2 {
 	font-size: 50px;
 	line-height: 60px;
@@ -2358,7 +2359,7 @@ facility
 	width: 100%;
     height: 125px;
     top: -125px;
-    left: 0;    
+    left: 0;
     background: #050C1D;
     z-index: -1;
 }
@@ -2401,7 +2402,7 @@ facility
   .footer-area ul li a:hover {
 	opacity: 0.5;
   }
-  
+
   .footer-up {
 	padding: 80px 0;
   }
@@ -2421,7 +2422,7 @@ facility
 	  padding: 0;
 	}
   }
-  
+
   .footer-bottom {
 	font-size: 15px;
 	font-weight: 400;
@@ -2450,7 +2451,7 @@ facility
   .company-email a:hover {
 	color: #fff;
   }
-  
+
   .phone-number p {
 	font-size: 20px;
 	color: #fff;
@@ -2471,7 +2472,7 @@ facility
 	margin-top: -40px;
 	position: relative;
 	z-index: 9;
-	border-top: 10px solid #41CB5B;
+	border-top: 10px solid orange;
 }
 
 .about-bg-wrapper {
@@ -2501,7 +2502,7 @@ facility
 }
 
 
-/* Service Section # 02  
+/* Service Section # 02
 ==================== */
 
 .single-service-bg {
@@ -2548,7 +2549,7 @@ facility
 }
 
 #service-2 .single-service-area:hover {
-	background: #41CB5B;
+	background: orange;
 }
 
 #service-2 .single-service-area:hover .service-icon i:before {
@@ -2576,7 +2577,7 @@ facility
 .service-area {
 	position: relative;
   }
-  
+
   .service-area.pt-200 {
 	padding-top: 200px;
   }
@@ -2585,7 +2586,7 @@ facility
 	  padding-top: 150px;
 	}
   }
-  
+
   .service-item-wrap {
 	margin-top: 30;
   }
@@ -2594,7 +2595,7 @@ facility
 	  margin-top: 70px;
 	}
   }
-  
+
   .service-single {
 	background: #fff;
 	box-shadow: 0 5px 83px 0 rgba(40, 40, 40, 0.11);
@@ -2607,11 +2608,11 @@ facility
 	  padding: 30px;
 	}
   }
-  
+
   .service-icon i:before {
-	color: #41CB5B;
+	color: orange;
   }
-  
+
   .service-single .service-icon {
 	position: absolute;
 	top: -15px;
@@ -2619,7 +2620,7 @@ facility
 	z-index: 2;
 	transform: perspective(1px) translateZ(0);
   }
-  
+
   .service-single:hover .service-icon {
 	-webkit-animation-name: hvr-buzz-out;
 	animation-name: hvr-buzz-out;
@@ -2630,13 +2631,13 @@ facility
 	-webkit-animation-iteration-count: 1;
 	animation-iteration-count: 1;
   }
-  
+
   .service-content h4 {
 	font-size: 24px;
 	font-weight: 500;
 	margin: 40px 0;
   }
-  
+
   .service-content ul li {
 	display: flex;
 	align-items: center;
@@ -2644,23 +2645,23 @@ facility
 	position: relative;
 	padding-left: 35px;
   }
-  
+
   .service-content .main-btn {
 	margin-top: 20px;
   }
-  
+
   ul.service-list {
 	margin-top: 30px;
   }
-  
+
   ul.service-list li {
 	position: relative;
 	padding-left: 35px;
   }
-  
+
   ul.service-list li i {
 	font-weight: 600;
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 	border-radius: 50%;
 	padding: 4px;
@@ -2669,7 +2670,7 @@ facility
 	top: 0;
 	left: 0;
   }
-  
+
   .service-single:after {
 	position: absolute;
 	content: "";
@@ -2677,15 +2678,15 @@ facility
 	right: 0;
 	width: 90%;
 	height: 4px;
-	background: #41CB5B;
+	background: orange;
 	transition: 0.3s ease-in-out;
 	border-radius: 0 0 12px 0;
   }
-  
+
   .service-single:hover::after {
 	height: 10px;
   }
-  
+
   .service-item-wrap .owl-dots button.owl-dot span {
 	width: 35px;
 	height: 3px;
@@ -2693,13 +2694,13 @@ facility
 	margin-right: 10px;
 	margin-top: 20px;
   }
-  
+
   .service-item-wrap .owl-dots button.owl-dot.active span {
 	width: 35px;
 	height: 6px;
-	background: #41CB5B;
+	background: orange;
   }
-  
+
   .service-item-wrap .owl-dots {
 	text-align: right;
 	margin-top: 25px;
@@ -2710,23 +2711,23 @@ facility
 	  margin-bottom: 25px;
 	}
   }
-  
+
   .service-item-wrap .owl-stage-outer {
 	overflow: initial;
   }
-  
+
   .owl-item {
 	opacity: 0;
   }
-  
+
   .owl-item.active {
 	opacity: 1;
   }
-  
+
   .more-services {
 	margin-top: 30px;
   }
-  
+
   .more-services p a {
 	position: relative;
 	font-size: 16px;
@@ -2736,7 +2737,7 @@ facility
 	text-transform: capitalize;
 	padding-bottom: 6px;
   }
-  
+
   .more-services p a::before {
 	content: "";
 	transition: 0.3s ease-in-out;
@@ -2748,9 +2749,9 @@ facility
 	transform: translateX(-50%);
 	width: 100%;
 	height: 2px;
-	background-color: #41CB5B;
+	background-color: orange;
   }
-  
+
   .service-area.service-2 {
 	padding-top: 100px;
   }
@@ -2759,13 +2760,13 @@ facility
 	  padding-top: 50px;
 	}
   }
-  
+
   .service-2 .service-single .service-icon {
 	position: static;
 	left: 0;
 	top: 0;
   }
-  
+
   .service-2 .service-single {
 	padding: 60px;
 	margin-top: 50px;
@@ -2780,11 +2781,11 @@ facility
 	  padding: 50px 40px;
 	}
   }
-  
+
   .service-3 .service-single {
 	padding: 0;
   }
-  
+
   .service-3 .service-content {
 	padding: 20px 40px 30px;
   }
@@ -2798,19 +2799,19 @@ facility
 	  padding: 20px 25px 30px;
 	}
   }
-  
+
   .service-3 .service-single:after {
 	display: none;
   }
-  
+
   .service-3 .service-thumb img {
 	border-radius: 12px 12px 0 0;
   }
-  
+
   .services_icon {
 	height: 90px;
 	width: 90px;
-	background-color: #41CB5B;
+	background-color: orange;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -2821,11 +2822,11 @@ facility
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
   }
-  
+
   .service-single:hover .services_icon {
 	bottom: 0;
   }
-  
+
   .services_icon i:before {
 	position: relative;
 	display: inline-block;
@@ -2835,21 +2836,21 @@ facility
 	transition-delay: 0.1s;
 	line-height: 1;
   }
-  
+
   .service-single:hover .services_icon i:before {
 	transform: rotateY(360deg);
   }
-  
+
   .service-img-wrap {
 	position: relative;
   }
-  
+
   .service-thumb {
 	display: block;
 	overflow: hidden;
 	border-radius: 12px 12px 0 0;
   }
-  
+
   .service-thumb img {
 	width: 100%;
 	transition-delay: 0.1s;
@@ -2857,7 +2858,7 @@ facility
 	transition-duration: 0.7s;
 	transition-property: all;
   }
-  
+
   .service-single:hover .service-thumb img {
 	transform: scale(1.1) rotate(2deg);
 	border-radius: 7px;
@@ -2915,7 +2916,7 @@ facility
 }
 
 .single-counter-box h6 {
-	color: #41CB5B;
+	color: orange;
 	font-size: 18px;
 	font-weight: 500;
 }
@@ -2936,7 +2937,7 @@ facility
 .single-feature-item .num {
 	font-size: 24px;
 	line-height: 27px;
-	background: #41CB5B;
+	background: orange;
 	padding: 10px;
 	color: #fff;
 	width: 50px;
@@ -2963,7 +2964,7 @@ facility
 	right: -50px;
 	width: 100%;
 	height: 100%;
-	background: #41CB5B;
+	background: orange;
 	z-index: -1;
 }
 
@@ -2985,7 +2986,7 @@ facility
 	margin: 10px 0;
 }
 
-/* Quotation Section 
+/* Quotation Section
 ====================
 */
 
@@ -3046,7 +3047,7 @@ facility
 }
 
 .quotation-dtl {
-	background-color: #41CB5B;
+	background-color: orange;
 	width: 100%;
 	height: 70px;
 	display: flex;
@@ -3078,14 +3079,14 @@ facility
 }
 
 .quotation-dtl a:hover {
-	color: #41CB5B;
+	color: orange;
 }
 
 .form-group label {
     margin-bottom: 10px;
 }
 
-/*Pricing Section 
+/*Pricing Section
 =================
 */
 
@@ -3104,13 +3105,13 @@ facility
 	  padding: 60px 30px 60px;
 	}
   }
-  
+
   .price-inner {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
   }
-  
+
   .price-amount {
 	position: relative;
 	line-height: 1;
@@ -3123,14 +3124,14 @@ facility
   .price-amount span.value {
 	font-size: 50px;
   }
-  
+
   .price-inner {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 30px;
   }
-  
+
   .price-feature {
 	margin-top: 30px;
   }
@@ -3142,17 +3143,17 @@ facility
   .price-feature ul li i {
 	margin-right: 15px;
   }
-  
+
   .price-btn {
 	margin-top: 50px;
   }
-  
+
 
 
 /*=============================HOME # 03 ==================================*/
 
 
-/* About Section # 03  
+/* About Section # 03
 ============== */
 
 .single-bar-item h4 {
@@ -3165,7 +3166,7 @@ facility
 }
 
 .barfiller .fill {
-	background: #41CB5B !important;
+	background: orange !important;
 }
 
 #about-3 .choose-certify {
@@ -3179,7 +3180,7 @@ facility
 
 #about-3 .choose-certify i {
 	font-size: 45px;
-	color: #41CB5B;
+	color: orange;
 }
 
 #about-3 .choose-certify h5 {
@@ -3210,7 +3211,7 @@ facility
 .experience-wrap {
 	width: 210px;
     height: 230px;
-    background: #41CB5B;
+    background: orange;
     color: #fff;
     display: inline-flex;
     align-items: center;
@@ -3268,7 +3269,7 @@ facility
 
 .feat-icon i:before {
 	font-size: 60px;
-	color: #41CB5B;
+	color: orange;
 }
 
 .feat-icon {
@@ -3329,7 +3330,7 @@ facility
 }
 
 #cta-2.cta-area h6 {
-	color: #41CB5B;
+	color: orange;
 	text-transform: uppercase;
 	font-size: 16px;
 	margin-bottom: 10px;
@@ -3360,7 +3361,7 @@ facility
 }
 
 /* Choose Us Section # 02
-====================== 
+======================
 */
 
 .choose-us-area {
@@ -3420,7 +3421,7 @@ facility
 	height: 100px;
 	top: -18px;
 	left: 65px;
-	background: #41CB5B;
+	background: orange;
 	opacity: .2;
 }
 
@@ -3445,7 +3446,7 @@ facility
 	margin-top: 120px;
 }
 
-/* Team Section 
+/* Team Section
 ============== */
 
 .team-member-bg {
@@ -3559,7 +3560,7 @@ facility
 }
 
 .team-social i {
-	color: #41CB5B;
+	color: orange;
 }
 
 .single-team-member:hover .team-social {
@@ -3569,7 +3570,7 @@ facility
 	transform: translateY(0);
 }
 
-/* Testimonial Section 
+/* Testimonial Section
 ============== */
 
 .testimonial-area {
@@ -3598,7 +3599,7 @@ facility
 
 
 .single-client-item:hover {
-	border-bottom: 3px solid #41CB5B;
+	border-bottom: 3px solid orange;
 }
 
 .single-client-item img {
@@ -3632,7 +3633,7 @@ facility
 
 .testimonial-icon i {
 	font-size: 25px;
-	background: #41CB5B;
+	background: orange;
 	padding: 15px;
 	position: absolute;
 	top: -20px;
@@ -3651,7 +3652,7 @@ facility
 .testimonial-area .owl-dots button.owl-dot.active span {
 	width: 35px;
 	height: 10px;
-	background: #41CB5B;
+	background: orange;
 }
 
 .testimonial-area .client-carousel .owl-dots {
@@ -3660,8 +3661,8 @@ facility
 }
 
 
-/* Contact Section 
-==================== 
+/* Contact Section
+====================
 */
 
 .contact-section {
@@ -3686,7 +3687,7 @@ facility
 .contact-section .contact-info i {
 	font-size: 30px;
 	margin-left: 0;
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 	padding: 10px;
 	border-radius: 0;
@@ -3722,7 +3723,7 @@ facility
 }
 
 
-/* Breadcrumb 
+/* Breadcrumb
 ============== */
 
 .breadcroumb-area {
@@ -3776,7 +3777,7 @@ facility
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border-left: 5px solid #41CB5B;
+	border-left: 5px solid orange;
 }
 
 .breadcroumb-area h6 a {
@@ -3836,7 +3837,7 @@ facility
 }
 
 #price-page .single-price-item.active {
-	border-color: #41CB5B;
+	border-color: orange;
 	opacity: 1;
 }
 
@@ -3892,7 +3893,7 @@ facility
 }
 
 .cost-center .btn-1 .dark {
-	background: #41CB5B;
+	background: orange;
 }
 
 .quote-form .btn:hover {
@@ -3937,7 +3938,7 @@ facility
     border-radius: 8px;
 }
 
-/* Blog-Classic Page 
+/* Blog-Classic Page
 ============== */
 
 #blog-page .single-blog-item {
@@ -3964,13 +3965,13 @@ facility
 }
 
 #blog-page .blog-content a:hover {
-	color: #41CB5B;
+	color: orange;
 }
 
 #blog-page .blog-content a.read-more {
 	text-transform: uppercase;
 	font-size: 16px;
-	color: #41CB5B;
+	color: orange;
 }
 
 .blog-search input {
@@ -4017,7 +4018,7 @@ facility
 
 .blog-category a.active,
 .archive a.active {
-	color: #41CB5B;
+	color: orange;
 }
 
 .recent-post h5 {
@@ -4075,11 +4076,11 @@ p.blog-date {
 }
 
 .popular-tag span.active {
-	background: #41CB5B;
+	background: orange;
 }
 
 .popular-tag span:hover {
-	background: #41CB5B;
+	background: orange;
 }
 
 .popular-tag span:hover a {
@@ -4213,12 +4214,12 @@ a.reply-btn {
 }
 
 .page-numbers.current {
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 }
 
 .pagination-block .page-numbers:hover {
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 }
 
@@ -4249,7 +4250,7 @@ a.reply-btn {
 }
 
 .service-list a.active {
-	background: #41CB5B;
+	background: orange;
 	color: #fff;
 }
 
@@ -4294,7 +4295,7 @@ a.reply-btn {
 	margin-top: 15px;
 }
 
-/* Single Blog Page  
+/* Single Blog Page
 ============== */
 
 .blog-meta {
@@ -4302,7 +4303,7 @@ a.reply-btn {
 }
 
 .blog-meta span i {
-	color: #41CB5B;
+	color: orange;
 	font-size: 20px;
 	margin-right: 10px;
 }
@@ -4317,7 +4318,7 @@ a.reply-btn {
 }
 
 
-/* Contact Page  
+/* Contact Page
 ============== */
 
 .contact-us-area {
@@ -4347,7 +4348,7 @@ a.reply-btn {
 
 .contact-us-inner a {
 	text-transform: uppercase;
-	color: #41CB5B;
+	color: orange;
 	font-size: 17px;
 	font-weight: 500;
 	margin: 20px 0 10px;
@@ -4360,7 +4361,7 @@ a.reply-btn {
 
 #contact-us .info-i i:before {
 	font-size: 50px;
-	color: #41CB5B;
+	color: orange;
 }
 
 #contact-us .contact-form .main-btn {
@@ -4377,7 +4378,7 @@ a.reply-btn {
 	margin: 40px 0;
 }
 
-/* services animation effect 
+/* services animation effect
 ----------------------------------*/
 
 @-webkit-keyframes hvr-buzz-out {
@@ -4487,14 +4488,14 @@ a.reply-btn {
 
 /* FAQ Section  */
 
-.cp-custom-accordion .accordion-buttons {    
+.cp-custom-accordion .accordion-buttons {
     position: relative;
     width: 100%;
     padding: 20px 40px 20px 40px;
-    text-align: left;    
+    text-align: left;
     font-size: 20px;
     font-weight: 500;
-    border: 1px solid #CBCBCB;    
+    border: 1px solid #CBCBCB;
     background: transparent;
     margin-bottom: 20px;
   }
@@ -4503,7 +4504,7 @@ a.reply-btn {
     font-size: 15px;
     margin-right: 15px;
 }
-  
+
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .cp-custom-accordion .accordion-buttons {
       padding: 20px 0px 20px 20px;
@@ -4511,7 +4512,7 @@ a.reply-btn {
   }
   @media (max-width: 767px) {
     .cp-custom-accordion .accordion-buttons {
-      padding: 20px;      
+      padding: 20px;
       font-size: 18px;
 	  line-height: 25px;
     }
@@ -4521,7 +4522,7 @@ a.reply-btn {
     position: absolute;
     content: "\f068";
     font-family: "Line Awesome Free";
-    top: 35%;    
+    top: 35%;
     right: 30px;
     font-size: 24px;
     font-weight: 500;
@@ -4535,7 +4536,7 @@ a.reply-btn {
     }
   }
   .cp-custom-accordion .accordion-buttons.collapsed::after {
-    content: "\f067";    
+    content: "\f067";
   }
   .cp-custom-accordion .collapsed {
     position: relative;
@@ -4543,9 +4544,9 @@ a.reply-btn {
   }
   .cp-custom-accordion .accordion-body {
     background-color: transparent;
-    border: 1px solid #CBCBCB;    
+    border: 1px solid #CBCBCB;
     color: #777;
-    padding: 20px 40px 20px 40px;    
+    padding: 20px 40px 20px 40px;
     position: relative;
     font-size: 16px;
     font-weight: 400;
@@ -4571,7 +4572,7 @@ a.reply-btn {
       padding-left: 30px;
     }
   }
-  
+
   .faq-section-bg {
     max-width: calc(100% - 10px);
 }
@@ -4593,7 +4594,7 @@ a.reply-btn {
 	}
   }
 
-.faq-content-wrap {    
+.faq-content-wrap {
     max-width: calc(100% - 40px);
 }
 
@@ -4612,7 +4613,7 @@ a.reply-btn {
 	background-position: center;
 	height: 500px;
   }
-  
+
   .video-section {
 	position: absolute;
 	bottom: 0;
@@ -4623,7 +4624,7 @@ a.reply-btn {
     border: 10px solid #fff;
     border-radius: 0 4px 0 0;
   }
-  
+
   .video-content-wrap {
 	background: #fff;
 	display: flex;
@@ -4643,7 +4644,7 @@ a.reply-btn {
 	  display: none;
 	}
   }
-  
+
   .play-btn {
 	width: 50px;
 	height: 50px;
@@ -4700,7 +4701,7 @@ a.reply-btn {
 	-webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
 	animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
   }
-  
+
   @keyframes btnIconRipple {
 	0% {
 	  border-width: 4px;
@@ -4717,6 +4718,6 @@ a.reply-btn {
 	}
   }
 
-  
+
 
 

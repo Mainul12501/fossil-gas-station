@@ -53,6 +53,21 @@ class GasStation extends Model
             {
                 $gasStation->gasStationEmployees()->detach();
             }
+            if (!empty($gasStation->gasStations))
+            {
+                $gasStation->gasStations->each->delete();
+            }
+            if (file_exists($gasStation->logo))
+                unlink($gasStation->logo);
+
+            if (file_exists($gasStation->main_image))
+                unlink($gasStation->main_image);
+
+            if (isset($gasStation->sub_images))
+            {
+                foreach (json_decode($gasStation->sub_images) as $item)
+                    unlink($item);
+            }
         });
     }
 

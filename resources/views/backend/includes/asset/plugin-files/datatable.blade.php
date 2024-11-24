@@ -4,6 +4,8 @@
 <script src="{{ asset('/') }}backend/dist/js/pages/datatable/custom-datatable.js"></script>
 <script>
     $(function () {
-        $('#dataTable').DataTable();
+        $('#dataTable').DataTable({
+            responsive: true
+        });
     })
 </script>
