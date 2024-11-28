@@ -108,7 +108,7 @@
 <!-- ============================================================== -->
 <!-- customizer Panel -->
 <!-- ============================================================== -->
-@include('backend.includes.customizer')
+{{--@include('backend.includes.customizer')--}}
 <div class="chat-windows"></div>
 <!-- ============================================================== -->
 @include('backend.includes.asset.script')

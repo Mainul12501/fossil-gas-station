@@ -22,7 +22,7 @@
 <script src="{{ asset('/') }}frontend/assets/js/main.js"></script>
 <!-- Toastr JS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
+{!! $basicSetting->seo_footer ?? '' !!}
 {!! Toastr::message() !!}
 @yield('script')
 @stack('script')

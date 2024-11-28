@@ -26,8 +26,8 @@
                                 <th>Roles</th>
                                 <th>Overview</th>
                                 <th>Social</th>
-                                <th>SEO Header</th>
-                                <th>SEO Footer</th>
+{{--                                <th>SEO Header</th>--}}
+{{--                                <th>SEO Footer</th>--}}
                                 <th>Slug</th>
                                 <th>Status</th>
                                 <th>Action</th>
@@ -55,8 +55,8 @@
                                             <span class="me-2"><a href=" https://wa.me/{{ $employee->whatsapp ?? '' }}" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
                                         </p>
                                     </td>
-                                    <td>{!! $employee->seo_header ?? '' !!}</td>
-                                    <td>{!! $employee->seo_footer ?? '' !!}</td>
+{{--                                    <td>{!! $employee->seo_header ?? '' !!}</td>--}}
+{{--                                    <td>{!! $employee->seo_footer ?? '' !!}</td>--}}
                                     <td>{{ $employee->slug ?? '' }}</td>
                                     <td>{{ $employee->status == 1 ? 'Published' : 'Unpublished' }}</td>
                                     <td class="">

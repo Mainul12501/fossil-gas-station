@@ -543,10 +543,10 @@
                         <a class="dropdown-item" href="javascript:void(0)" onclick="event.preventDefault();document.getElementById('logoutForm').submit()"><i data-feather="log-out" class="feather-sm text-danger me-1 ms-1"></i>
                             Logout</a>
                         <form action="{{ route('logout') }}" method="post" id="logoutForm">@csrf</form>
-                        <div class="dropdown-divider"></div>
-                        <div class="p-2">
-                            <a href="#" class="btn d-block w-100 btn-primary rounded-pill">View Profile</a>
-                        </div>
+{{--                        <div class="dropdown-divider"></div>--}}
+{{--                        <div class="p-2">--}}
+{{--                            <a href="#" class="btn d-block w-100 btn-primary rounded-pill">View Profile</a>--}}
+{{--                        </div>--}}
                     </div>
                 </li>
                 <!-- ============================================================== -->

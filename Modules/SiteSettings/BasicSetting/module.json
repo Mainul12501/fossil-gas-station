@@ -1,0 +1,11 @@
+{
+    "name": "SiteSettings/BasicSetting",
+    "alias": "sitesettings/basicsetting",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SiteSettings/BasicSetting\\Providers\\SiteSettings/BasicSettingServiceProvider"
+    ],
+    "files": []
+}

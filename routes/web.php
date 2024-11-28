@@ -8,6 +8,7 @@ use App\Http\Controllers\Backend\RolePermissionManagement\Role\RoleController;
 use App\Http\Controllers\Backend\RolePermissionManagement\Permission\PermissionController;
 use App\Http\Controllers\Backend\RolePermissionManagement\Permission\PermissionCategoryController;
 
+use App\Http\Controllers\BasicSettingController;
 use App\Http\Controllers\Backend\CommonCrudControllers\NewsletterController;
 use App\Http\Controllers\Backend\CommonCrudControllers\HomePageSliderController;
 
@@ -19,7 +20,7 @@ Route::get('/', [FrontendViewController::class, 'home'])->name('home');
 Route::get('/about-us', [FrontendViewController::class, 'about'])->name('about');
 Route::get('/services', [FrontendViewController::class, 'services'])->name('services');
 Route::get('/contact-us', [FrontendViewController::class, 'contactUs'])->name('contact-us');
-Route::get('/gas', [FrontendViewController::class, 'gasDetails'])->name('gas-details');
+Route::get('/station/{slug?}', [FrontendViewController::class, 'gasDetails'])->name('gas-details');
 
 Route::post('/new-contact', [FrontendViewController::class, 'newContact'])->name('new-contact');
 
@@ -35,11 +36,12 @@ Route::middleware([
         'permissions'   => PermissionController::class,
         'roles'     => RoleController::class,
 
+        'basic-settings' => BasicSettingController::class,
         'home-sliders' => HomePageSliderController::class,
         'newsletters'   => NewsletterController::class,
 
         'employee-roles'    => EmployeeRoleController::class,
         'gas-station-employees' => GasStationEmployeeController::class,
-        'gas-stations'  => GasStationController::class
+        'gas-stations'  => GasStationController::class,
     ]);
 });

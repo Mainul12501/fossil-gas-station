@@ -74,7 +74,7 @@
                                         <td>
                                             <p>
                                                 <span class="me-2"><a href="{{ $gasStation->fb ?? '' }}" target="_blank"><i class="fa fa-facebook-f"></i></a></span>
-                                                <span class="me-2"><a href=" https://wa.me/{{ $gasStation->whatsapp ?? '' }}" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
+                                                <span class="me-2"><a href="https://wa.me/{{ $gasStation->whatsapp ?? '' }}" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
                                                 <span class="me-2"><a href="{{ $gasStation->insta ?? '' }}" target="_blank"><i class="fa fa-instagram"></i></a></span>
                                                 <span class="me-2"><a href="{{ $gasStation->telegram ?? '' }}" target="_blank"><i class="fa fa-telegram"></i></a></span>
                                                 <span class="me-2"><a href="{{ $gasStation->linkedin ?? '' }}" target="_blank"><i class="fa fa-linkedin"></i></a></span>

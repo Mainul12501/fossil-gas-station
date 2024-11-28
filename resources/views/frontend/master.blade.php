@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-    <title> Fossil - Gas Station | @yield('title')</title>
-
+    <title> {{  $basicSetting->title ?? 'Site Title' }} | @yield('title')</title>
+    <link rel="shortcut icon" href="{{ asset($basicSetting->favicon ?? 'assets/img/favicon.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset($basicSetting->favicon ?? 'assets/img/favicon.png') }}" type="image/x-icon">
     @include('frontend.includes.assets.head')
 
 </head>
@@ -32,6 +33,9 @@
 
 <!-- body area -->
 @yield('body')
+
+<!-- Client Area -->
+@include('frontend.includes.brand-slider')
 
 <!-- Newsletter Section  -->
 @include('frontend.includes.newsletter')

@@ -37,7 +37,7 @@
                                         <img src="{{ asset($homeSlider->banner_image ?? '') }}" alt="banner-image-{{ $key }}" style="height: 60px" />
                                     </td>
                                     <td>{{ $homeSlider->tiny_title ?? '' }}</td>
-                                    <td>{{ $homeSlider->title ?? '' }}</td>
+                                    <td>{!! $homeSlider->title ?? '' !!}</td>
                                     <td>{!! $homeSlider->description ?? '' !!}</td>
                                     <td>{{ $homeSlider->status == 1 ? 'Published' : 'Unpublished' }}</td>
                                     <td class="">

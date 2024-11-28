@@ -23,6 +23,6 @@
 <link href="{{ asset('/') }}frontend/assets/css/responsive.css" rel="stylesheet">
 <!-- Toastr CSS -->
 <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
-
+{!! $basicSetting->seo_header ?? '' !!}
 @yield('style')
 @stack('style')

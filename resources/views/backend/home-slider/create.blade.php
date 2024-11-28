@@ -25,7 +25,7 @@
                         </div>
                         <div>
                             <label for="">Title</label>
-                            <input type="text" name="title" {{ isset($isShown) ? 'readonly' : '' }} class="form-control" value="{{ isset($homeSlider) ? $homeSlider->title : '' }}" />
+                            <textarea name="title" {{ isset($isShown) ? 'disabled' : '' }} class="form-control" id="elm1" cols="30" rows="2">{!! isset($homeSlider) ? $homeSlider->title : '' !!}</textarea>
                         </div>
                         <div class="mt-2">
                             <label for="">Description</label>
@@ -70,7 +70,7 @@
     <script>
 
         tinymce.init({
-            selector: 'textarea#elm1',
+            selector: 'textarea',
             height: 200,
             menubar: false,
             plugins: [

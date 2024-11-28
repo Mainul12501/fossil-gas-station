@@ -6,7 +6,7 @@
                     <div class="col-lg-3">
 
                         <div class="logo">
-                            <a class="navbar-brand" href="index.html"><img src="{{ asset('/') }}frontend/assets/img/logo.png" alt=""></a>
+                            <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset(isset($basicSetting) ? $basicSetting->logo : 'frontend/assets/img/logo.png' ) }}" alt="site logo" style="width: 190px; height: 50px"></a>
                         </div>
 
                     </div>
@@ -22,34 +22,40 @@
                                 <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                                     <ul class="navbar-nav">
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="{{ route('home') }}">Home</a>
+                                            <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
 
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('about') }}">About</a>
+                                            <a class="nav-link {{ request()->is('about-us') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('services') }}">Services</a>
-
-
+                                            <a class="nav-link {{ request()->is('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a>
                                         </li>
-
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Jomuna Gas Station
-                                                <span class="sub-nav-toggler">
+                                        @foreach($gasStations as $key => $gasStation)
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="{{ route('gas-details', ['slug' => $gasStation->slug]) }}">{{ $gasStation->name ?? 'station Name' }}
+                                                    <span class="sub-nav-toggler">
  													</span>
-                                            </a>
-                                            <ul class="sub-menu">
-                                                <li><a href="choose-us.html">Sub Station 1</a></li>
-                                                <li><a href="choose-us.html">Sub Station 2</a></li>
-                                            </ul>
-                                        </li>
+                                                </a>
+                                                @if(count($gasStation->gasStations) > 0)
+                                                    <ul class="sub-menu">
+                                                        @foreach($gasStation->gasStations as $childGasStation)
+                                                            <li>
+                                                                <a href="{{ route('gas-details', ['slug' => $childGasStation->slug]) }}">{{ $childGasStation->name }}</a>
+{{--                                                                <ul class="sub-menu">--}}
+{{--                                                                    <li><a href="choose-us.html">Sub Station 2</a></li>--}}
+{{--                                                                </ul>--}}
+                                                            </li>
+                                                        @endforeach
 
-
+                                                    </ul>
+                                                @endif
+                                            </li>
+                                        @endforeach
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('contact-us') }}">Contact</a>
+                                            <a class="nav-link {{ request()->is('contact-us') ? 'active' : '' }}" href="{{ route('contact-us') }}">Contact</a>
                                         </li>
                                     </ul>
 

@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="breadcroumb-title">
                         <h1>About Us</h1>
-                        <h6><a href="index.html">Home</a> / About Us</h6>
+                        <h6><a href="{{ route('home') }}">Home</a> / About Us</h6>
                     </div>
                 </div>
             </div>
@@ -265,30 +265,31 @@
                 </div>
             </div>
             <div class="row">
+                @forelse($employees as $employee)
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="single-team-member wow fadeInLeft" data-wow-delay=".2s">
                         <div class="team-member-bg">
                             <div class="team-content">
                                 <div class="team-title">
-                                    <a href="#">James Cameron</a>
+                                    <a href="#">{{ $employee->name ?? 'Employee Name' }}</a>
                                 </div>
                                 <div class="team-subtitle">
-                                    <p>Manager</p>
+                                    <p>{{ $employee->gasStationEmployeeRoles[0]->name ?? 'Position Name' }}</p>
                                 </div>
                             </div>
                             <div class="team-social">
                                 <ul>
                                     <li>
-                                        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
+                                        <a href="{{ $employee->fb ?? '' }}" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+                                        <a href="{{ $employee->x ?? '' }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                                        <a href="{{ $employee->linkedin ?? '' }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
                                     </li>
                                     <li>
-                                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i> </a>
+                                        <a href="https://wa.me/{{ $employee->whatsapp ?? '' }}" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> </a>
                                     </li>
 
                                 </ul>
@@ -297,150 +298,106 @@
 
                     </div>
                 </div>
+                @empty
+                    <div class="col-12"><p class="text-danger">No employee found.</p></div>
+                @endforelse
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-12">--}}
+{{--                    <div class="single-team-member wow fadeInLeft" data-wow-delay=".4s">--}}
+{{--                        <div class="team-member-bg team-bg-2">--}}
+{{--                            <div class="team-content">--}}
+{{--                                <div class="team-title">--}}
+{{--                                    <a href="#">Mich Thomson</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="team-subtitle">--}}
+{{--                                    <p>Supervisor</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="team-social">--}}
+{{--                                <ul>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
 
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="single-team-member wow fadeInLeft" data-wow-delay=".4s">
-                        <div class="team-member-bg team-bg-2">
-                            <div class="team-content">
-                                <div class="team-title">
-                                    <a href="#">Mich Thomson</a>
-                                </div>
-                                <div class="team-subtitle">
-                                    <p>Supervisor</p>
-                                </div>
-                            </div>
-                            <div class="team-social">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i> </a>
-                                    </li>
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-12">--}}
+{{--                    <div class="single-team-member wow fadeInRight" data-wow-delay=".6s">--}}
+{{--                        <div class="team-member-bg team-bg-3">--}}
+{{--                            <div class="team-content">--}}
+{{--                                <div class="team-title">--}}
+{{--                                    <a href="#">Josh Batlar</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="team-subtitle">--}}
+{{--                                    <p>Sr. Executive</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="team-social">--}}
+{{--                                <ul>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="single-team-member wow fadeInRight" data-wow-delay=".6s">
-                        <div class="team-member-bg team-bg-3">
-                            <div class="team-content">
-                                <div class="team-title">
-                                    <a href="#">Josh Batlar</a>
-                                </div>
-                                <div class="team-subtitle">
-                                    <p>Sr. Executive</p>
-                                </div>
-                            </div>
-                            <div class="team-social">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                    <div class="single-team-member wow fadeInRight" data-wow-delay=".8s">
-                        <div class="team-member-bg team-bg-4">
-                            <div class="team-content">
-                                <div class="team-title">
-                                    <a href="#">Albert Gill</a>
-                                </div>
-                                <div class="team-subtitle">
-                                    <p>Relation Officer</p>
-                                </div>
-                            </div>
-                            <div class="team-social">
-                                <ul>
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="col-lg-3 col-md-6 col-sm-6 col-12">--}}
+{{--                    <div class="single-team-member wow fadeInRight" data-wow-delay=".8s">--}}
+{{--                        <div class="team-member-bg team-bg-4">--}}
+{{--                            <div class="team-content">--}}
+{{--                                <div class="team-title">--}}
+{{--                                    <a href="#">Albert Gill</a>--}}
+{{--                                </div>--}}
+{{--                                <div class="team-subtitle">--}}
+{{--                                    <p>Relation Officer</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="team-social">--}}
+{{--                                <ul>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="#"><i class="fa fa-behance" aria-hidden="true"></i> </a>--}}
+{{--                                    </li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>
 
-    <!-- Client Area -->
 
-    <div class="client-area pt-50 pb-40">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="logo-carousel owl-carousel">
-                        <div class="single-logo-wrapper">
-                            <div class="logo-inner-item">
-                                <img src="{{ asset('/') }}frontend/assets/img/client/1.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="logo-inner-item">
-                                <img src="{{ asset('/') }}frontend/assets/img/client/2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="logo-inner-item">
-                                <img src="{{ asset('/') }}frontend/assets/img/client/3.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="logo-inner-item">
-                                <img src="{{ asset('/') }}frontend/assets/img/client/4.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="logo-inner-item">
-                                <img src="{{ asset('/') }}frontend/assets/img/client/5.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="logo-inner-item">
-                                <img src="{{ asset('/') }}frontend/assets/img/client/6.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="single-logo-wrapper">
-                            <div class="logo-inner-item">
-                                <img src="{{ asset('/') }}frontend/assets/img/client/7.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 @endsection
