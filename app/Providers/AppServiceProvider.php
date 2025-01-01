@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
             $view->with([
                 'basicSetting' => BasicSetting::first(),
                 'gasStations' => GasStation::where(['gas_station_id' => 0, 'status' => 1])->get(),
-                'gasStationsLogos' => GasStation::where(['status' => 1])->select('id', 'logo', 'name')->get()
+                'gasStationsLogos' => GasStation::where(['status' => 1])->select('id', 'logo', 'name')->get(),
             ]);
         });
     }

@@ -39,13 +39,41 @@ class FrontendViewController extends Controller
         {
             return view('frontend.gas-stations.details', [
                 'station'   => GasStation::where('slug', $slug)->with('gasStations', 'gasStationEmployees')->first(),
-
+                'isDetailsPage'     => true
             ]);
         } else {
             Toastr::error('Station Not found. Please try again.');
             return back();
         }
 
+    }
+
+    public function career()
+    {
+        return view('frontend.common-pages.career', [
+            'employees' => GasStationEmployee::where(['status' => 1])->get(),
+        ]);
+    }
+    public function locations()
+    {
+        $locations = [];
+//        $locations = [
+//            ['Mumbai', 19.0760,72.8777],
+//        ];
+        foreach (GasStation::where(['status' => 1])->get() as $station)
+        {
+            if (($station->lat != 0) && ($station->lon != 0) )
+            {
+                $locations[] = [$station->name, $station->lat, $station->lon];
+            }
+        }
+        if (count($locations) == 0)
+        {
+                    $locations = [
+            ['Park', 23.733004880974164, 90.40019485359036],
+        ];
+        }
+        return view('frontend.common-pages.locations', ['locations' => $locations]);
     }
 
     public function newContact(Request $request)

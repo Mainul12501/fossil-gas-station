@@ -6,7 +6,11 @@
                     <div class="col-lg-3">
 
                         <div class="logo">
-                            <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset(isset($basicSetting) ? $basicSetting->logo : 'frontend/assets/img/logo.png' ) }}" alt="site logo" style="width: 190px; height: 50px"></a>
+{{--                            @if(isset($isDetailsPage))--}}
+{{--                                <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset(isset($gasStation) ? $gasStation->logo : 'frontend/assets/img/logo.png' ) }}" alt="site logo" style="width: 190px; height: 50px"></a>--}}
+{{--                            @else--}}
+                                <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset(isset($basicSetting) ? $basicSetting->logo : 'frontend/assets/img/logo.png' ) }}" alt="site logo" style="width: 190px; height: 50px"></a>
+{{--                            @endif--}}
                         </div>
 
                     </div>
@@ -33,6 +37,9 @@
                                         <li class="nav-item">
                                             <a class="nav-link {{ request()->is('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link {{ request()->is('services') ? 'active' : '' }}" href="{{ route('career') }}">Career</a>
+                                        </li>
                                         @foreach($gasStations as $key => $gasStation)
                                             <li class="nav-item">
                                                 <a class="nav-link" href="{{ route('gas-details', ['slug' => $gasStation->slug]) }}">{{ $gasStation->name ?? 'station Name' }}
@@ -54,6 +61,9 @@
                                                 @endif
                                             </li>
                                         @endforeach
+                                        <li class="nav-item">
+                                            <a class="nav-link {{ request()->is('contact-us') ? 'active' : '' }}" href="{{ route('locations') }}">Locations</a>
+                                        </li>
                                         <li class="nav-item">
                                             <a class="nav-link {{ request()->is('contact-us') ? 'active' : '' }}" href="{{ route('contact-us') }}">Contact</a>
                                         </li>

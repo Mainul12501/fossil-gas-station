@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 text-end">
-                <div class="site-info">
+                <div class="site-info mt-2">
                     Turning big ideas into great services!
                     <div class="social-area text-danger">
                         <a href="{{ $basicSetting->fb ?? 'https://fb.com' }}" target="_blank"><i class="lab la-facebook-f text-light"></i></a>

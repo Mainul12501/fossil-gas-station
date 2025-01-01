@@ -65,7 +65,7 @@ class GasStationController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(GasStation $gasStation)
+    public function edit(GasStation $gasStation, Request $request)
     {
 //        return view('backend.home-slider.create', ['homeSlider' => $homePageSlider]);
         return view('backend.gas-station.station.create', ['gasStation' => $gasStation, 'stationEmployees' => GasStationEmployee::where(['status' => 1])->get(),'parent_station_id' => $request->station ?? 0]);

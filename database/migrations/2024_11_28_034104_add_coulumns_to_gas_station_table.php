@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-//        Schema::table('gas_stations', function (Blueprint $table) {
-//            $table->string('incorporated_year')->nullable();
-//        });
+        Schema::table('gas_stations', function (Blueprint $table) {
+            $table->string('incorporated_year')->nullable();
+        });
     }
 
     /**

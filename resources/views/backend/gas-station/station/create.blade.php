@@ -90,9 +90,21 @@
                                 <label for="">Office Email (Contact)</label>
                                 <input type="text" name="office_email_3" {{ isset($isShown) ? 'readonly' : '' }} class="form-control" value="{{ isset($gasStation) ? $gasStation->office_email_3 : '' }}" />
                             </div>
+                            <div class="col-md-6">
+                                <label for="">Incorporated Year</label>
+                                <input type="date" name="incorporated_year" {{ isset($isShown) ? 'readonly' : '' }} class="form-control" value="{{ isset($gasStation) ? $gasStation->incorporated_year : '' }}" />
+                            </div>
                             <div class="col-md-12">
                                 <label for="">Google Map Location</label>
                                 <input type="text" name="location_map" {{ isset($isShown) ? 'readonly' : '' }} class="form-control" value="{{ isset($gasStation) ? $gasStation->location_map : '' }}" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Latitude</label>
+                                <input type="text" name="lat" {{ isset($isShown) ? 'readonly' : '' }} class="form-control" value="{{ isset($gasStation) ? $gasStation->lat : '' }}" />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Longitude</label>
+                                <input type="text" name="lon" {{ isset($isShown) ? 'readonly' : '' }} class="form-control" value="{{ isset($gasStation) ? $gasStation->lon : '' }}" />
                             </div>
                         </div>
                         <div class="mt-2">

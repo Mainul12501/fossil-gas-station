@@ -39,6 +39,9 @@ class GasStation extends Model
         'office_email_2',
         'office_email_3',
         'office_phone_number_2',
+        'incorporated_year',
+        'lat',
+        'lon',
     ];
 
     protected $searchableFields = ['*'];
@@ -101,6 +104,9 @@ class GasStation extends Model
             'office_email_2' => $request->office_email_2,
             'office_email_3' => $request->office_email_3,
             'office_phone_number_2' => $request->office_phone_number_2,
+            'incorporated_year' => $request->incorporated_year,
+            'lat' => $request->lat,
+            'lon' => $request->lon,
         ]);
     }
 

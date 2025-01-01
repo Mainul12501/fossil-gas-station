@@ -101,7 +101,7 @@
                                             <a href="{{ route('gas-stations.show', $gasStation->id) }}" class="btn btn-sm btn-primary mt-1">
                                                 <i class="mdi mdi-eye"></i>
                                             </a> <br>
-                                            <a href="{{ route('gas-stations.edit', $gasStation->id) }}" class="btn btn-sm btn-warning mt-1">
+                                            <a href="{{ route('gas-stations.edit', ['gas_station' => $gasStation->id, 'station' => $gasStation->gas_station_id]) }}" class="btn btn-sm btn-warning mt-1">
                                                 <i class="mdi mdi-square-edit-outline"></i>
                                             </a> <br>
                                             {{--                                        @endcan--}}

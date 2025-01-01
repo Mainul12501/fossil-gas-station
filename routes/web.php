@@ -21,6 +21,8 @@ Route::get('/about-us', [FrontendViewController::class, 'about'])->name('about')
 Route::get('/services', [FrontendViewController::class, 'services'])->name('services');
 Route::get('/contact-us', [FrontendViewController::class, 'contactUs'])->name('contact-us');
 Route::get('/station/{slug?}', [FrontendViewController::class, 'gasDetails'])->name('gas-details');
+Route::get('/career', [FrontendViewController::class, 'career'])->name('career');
+Route::get('/locations', [FrontendViewController::class, 'locations'])->name('locations');
 
 Route::post('/new-contact', [FrontendViewController::class, 'newContact'])->name('new-contact');
 

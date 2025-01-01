@@ -6,10 +6,10 @@
 
 {{--    Carousal Image Slider--}}
 @if(isset($station->sub_images))
-    <div id="carouselExampleIndicators" class="carousel slide">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="2000"  data-bs-ride="carousel">
         <div class="carousel-indicators">
             @foreach(json_decode($station->sub_images) as $key => $item)
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="{{ $key == 0 ? 'active' : '' }}" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ $key }}" class="{{ $key == 0 ? 'active' : '' }}" aria-current="true" aria-label="Slide 1"></button>
             @endforeach
 {{--            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>--}}
 {{--            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>--}}
@@ -186,8 +186,8 @@
                                     <td>{{ $station->state_id ?? '' }}</td>
                                 </tr>
                                 <tr>
-                                    <td><b>Date Filed :</b></td>
-                                    <td>{{ $station->created_at->format('d M Y') }}</td>
+                                    <td><b>Date Filled :</b></td>
+                                    <td>{{ \Illuminate\Support\Carbon::parse($station->incorporated_year)->format('d M Y') ?? 'No data found' }}</td>
                                 </tr>
                                 <tr>
                                     <td><b>Registered Agent :</b></td>
@@ -195,7 +195,7 @@
                                 </tr>
                                 <tr>
                                     <td><b>Phone :</b></td>
-                                    <td>{{ $station->phone ?? 'Station Phone Number' }}</td>
+                                    <td>{{ $station->office_phone_number ?? 'Station Phone Number' }}</td>
                                 </tr>
                                 <tr>
                                     <td><b>Status :</b></td>
