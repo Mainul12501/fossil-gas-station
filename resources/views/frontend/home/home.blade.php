@@ -435,7 +435,8 @@
                                 <p>Good quality gas at cheap prices. Free air if you need it.</p>
                                 <div class="testimonial-author">
                                     <div class="author-img">
-                                        <img src="{{ asset('/') }}frontend/assets/img/testimonial/1.jpg" alt="">
+{{--                                        <img src="{{ asset('/') }}frontend/assets/img/testimonial/1.jpg" alt="">--}}
+                                        <img style="height: 70px" src="https://futurenetworld.net/wp-content/uploads/2022/07/Manish_Gupta_Headshot_22-removebg-preview-removebg-preview-modified-e1659102266740.png" alt="">
                                     </div>
                                     <div class="author-desc">
                                         <h5>Manish Gupta</h5><span>Customer</span>
@@ -450,7 +451,8 @@
                                 <p>These gus literally saved my from being stuck on the side of the road.</p>
                                 <div class="testimonial-author">
                                     <div class="author-img">
-                                        <img src="{{ asset('/') }}frontend/assets/img/testimonial/2.jpg" alt="">
+{{--                                        <img src="{{ asset('/') }}frontend/assets/img/testimonial/2.jpg" alt="">--}}
+                                        <img style="height: 70px" src="https://secondhandsongs.com/picture/400821" alt="">
                                     </div>
                                     <div class="author-desc">
                                         <h5>Sarah Haymes</h5><span>Customer</span>
