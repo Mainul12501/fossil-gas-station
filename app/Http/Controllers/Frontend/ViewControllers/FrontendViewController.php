@@ -17,8 +17,8 @@ class FrontendViewController extends Controller
     {
         return view('frontend.home.home', [
             'homeSliders'   => HomePageSlider::where(['status' => 1])->get(),
-            'employees' => GasStationEmployee::where(['status' => 1])->take(4)->get(),
-            'station'   => GasStation::where(['gas_station_id' => 0, 'status' => 1])->first(),
+            'employees' => GasStationEmployee::where(['status' => 1])->orderBy('id', 'asc')->take(4)->get(),
+            'stations'   => GasStation::where(['gas_station_id' => 0, 'status' => 1])->get(),
         ]);
     }
     public function about()

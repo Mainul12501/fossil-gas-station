@@ -33,7 +33,7 @@
                 @foreach($employees as $key => $employee)
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="single-team-member wow fadeInLeft" data-wow-delay=".2s">
-                            <div class="team-member-bg" style="max-height: 300px; background-image: url({{ asset($employee->profile_image) }}); ">
+                            <div class="team-member-bg" style="max-height: 300px; background-image: url({{ asset($employee->profile_image ?? 'frontend/assets/img/team/1.jpg') }}); ">
                                 <div class="team-content">
                                     <div class="team-title">
                                         <a href="javascript:void(0)">{{ $employee->name }}</a>

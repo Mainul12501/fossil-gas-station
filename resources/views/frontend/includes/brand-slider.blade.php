@@ -12,37 +12,6 @@
                             </div>
                         </div>
                     @endforeach
-
-                    {{--                        <div class="single-logo-wrapper">--}}
-                    {{--                            <div class="logo-inner-item">--}}
-                    {{--                                <img src="{{ asset('/') }}frontend/assets/img/client/2.jpg" alt="">--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                        <div class="single-logo-wrapper">--}}
-                    {{--                            <div class="logo-inner-item">--}}
-                    {{--                                <img src="{{ asset('/') }}frontend/assets/img/client/3.jpg" alt="">--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                        <div class="single-logo-wrapper">--}}
-                    {{--                            <div class="logo-inner-item">--}}
-                    {{--                                <img src="{{ asset('/') }}frontend/assets/img/client/4.jpg" alt="">--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                        <div class="single-logo-wrapper">--}}
-                    {{--                            <div class="logo-inner-item">--}}
-                    {{--                                <img src="{{ asset('/') }}frontend/assets/img/client/5.jpg" alt="">--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                        <div class="single-logo-wrapper">--}}
-                    {{--                            <div class="logo-inner-item">--}}
-                    {{--                                <img src="{{ asset('/') }}frontend/assets/img/client/6.jpg" alt="">--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
-                    {{--                        <div class="single-logo-wrapper">--}}
-                    {{--                            <div class="logo-inner-item">--}}
-                    {{--                                <img src="{{ asset('/') }}frontend/assets/img/client/7.jpg" alt="">--}}
-                    {{--                            </div>--}}
-                    {{--                        </div>--}}
                 </div>
             </div>
         </div>

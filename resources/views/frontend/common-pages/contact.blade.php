@@ -29,7 +29,7 @@
                         <div class="contact-us-inner">
                             <div class="info-i"><span><i class="las la-map-marker"></i></span></div>
                             <h5>Location</h5>
-                            <p>{!! $basicSetting->address ?? 'Dhaka Bangladesh' !!}</p>
+                            <p>{!! $basicSetting->address ?? '165 N Fairview Ave, Goleta, CA, 93117' !!}</p>
 {{--                            <a href="#">Find us on map</a>--}}
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         <div class="contact-us-inner">
                             <div class="info-i"><span><i class="las la-clock"></i></span></div>
                             <h5>Office Hour</h5>
-                            <p>Monday-Friday <br>08.00-20.00</p>
+                            <p>24/7</p>
 {{--                            <a href="#">Get Direction</a>--}}
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                         <div class="contact-us-inner">
                             <div class="info-i"><span><i class="las la-mobile"></i></span></div>
                             <h5>Phone Number</h5>
-                            <p>{{ $basicSetting->phone ?? '016444' }} <br>(+3)112-976-2067</p>
+                            <p>{{ $basicSetting->phone ?? '+1 (213) 378-4856' }} </p>
 {{--                            <a href="#">Call Now</a>--}}
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         <div class="contact-us-inner">
                             <div class="info-i"><span><i class="las la-envelope"></i></span></div>
                             <h5>E-mail Address</h5>
-                            <p>{{ $basicSetting->email ?? 'site email' }}<br>info@webmail.com</p>
+                            <p>{{ $basicSetting->email ?? 'info@jamunaca.com' }}</p>
 {{--                            <a href="#">Mail Us</a>--}}
                         </div>
                     </div>

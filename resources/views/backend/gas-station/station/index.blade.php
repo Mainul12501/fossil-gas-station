@@ -61,7 +61,7 @@
                                                 @endif
                                             </div>
                                         </td>
-                                        <td>{!! $gasStation->overview ?? '' !!}</td>
+                                        <td>{!! str()->words(strip_tags($gasStation->overview), 30) ?? '' !!}</td>
                                         <td>
                                             <div>
                                                 <span>Phone: {{ $gasStation->office_phone_number }}</span> <br>

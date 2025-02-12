@@ -1,7 +1,7 @@
 <header class="header-area">
     <div class="sticky-area">
         <div class="navigation">
-            <div class="container">
+            <div class="container-fluid px-3">
                 <div class="row align-items-center">
                     <div class="col-lg-3">
 

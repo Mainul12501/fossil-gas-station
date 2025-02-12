@@ -22,6 +22,18 @@
 <script src="{{ asset('/') }}frontend/assets/js/main.js"></script>
 <!-- Toastr JS -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script>
+    function getMaxHeight(classSelector)
+    {
+        let height = 0;
+        $('.'+classSelector).each(function () {
+            if ($(this).height() > height) {
+                height = $(this).height();
+            }
+        });
+        return height+'px';
+    }
+</script>
 {!! $basicSetting->seo_footer ?? '' !!}
 {!! Toastr::message() !!}
 @yield('script')
