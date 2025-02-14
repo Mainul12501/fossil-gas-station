@@ -235,7 +235,7 @@
                                 <div class="testimonial-author">
                                     <div class="author-img">
                                         {{--                                        <img src="{{ asset('/') }}frontend/assets/img/testimonial/2.jpg" alt="">--}}
-                                        <img style="height: 70px" src="https://secondhandsongs.com/picture/400821" alt="">
+                                        <img style="height: 70px" src="{{ asset('/frontend/assets/img/gas-custom/sara.webp') }}" alt="client-2">
                                     </div>
                                     <div class="author-desc">
                                         <h5>Sarah Haymes</h5><span>Customer</span>
@@ -302,7 +302,7 @@
                 @forelse($employees as $employee)
                 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <div class="single-team-member wow fadeInLeft" data-wow-delay=".2s">
-                        <div class="team-member-bg" style="max-height: 300px; background-image: url({{ asset($employee->profile_image ?? 'frontend/assets/img/team/1.jpg') }}); ">
+                        <div class="team-member-bg" style="max-height: 300px; background-size: contain; background-image: url({{ asset($employee->profile_image ?? 'frontend/assets/img/team/1.jpg') }}); ">
                             <div class="team-content">
                                 <div class="team-title">
                                     <a href="#">{{ $employee->name ?? 'Employee Name' }}</a>

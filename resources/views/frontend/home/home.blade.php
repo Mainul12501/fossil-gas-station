@@ -130,7 +130,7 @@
 {{--                            </div>--}}
 {{--                        </div>--}}
                         <div class="card border-0">
-                            <img src="{{ asset('/frontend/assets/img/gas-custom/gas-tree.jpeg') }}" alt="" class="card-img-top" style="min-height: 500px;">
+                            <img src="{{ asset('/frontend/assets/img/gas-custom/gas-tree.jpg') }}" alt="" class="card-img-top" style="min-height: 500px;">
                         </div>
 
                     </div>
@@ -188,7 +188,8 @@
                     <div class="single-serv-item mt-30 wow fadeInLeft" data-wow-delay=".6s">
                         <div class="serv-icon">
 {{--                            <i class="flaticon-gasoline"></i>--}}
-                            <img src="{{ asset('/frontend/assets/img/gas-custom/free-air.png') }}" style="height: 50px" alt="free-air">
+{{--                            <img src="{{ asset('/frontend/assets/img/gas-custom/free-air.png') }}" style="height: 50px" alt="free-air">--}}
+                            <img src="https://t3.ftcdn.net/jpg/04/14/59/14/360_F_414591474_5MMrcBs3RC5cy9CFQ8aP6bmD1AW2oC1j.jpg" style="height: 50px" alt="free-air">
                         </div>
                         <div class="serv-content">
                             <h5>Free Air </h5>
@@ -454,7 +455,8 @@
                                 <div class="testimonial-author">
                                     <div class="author-img">
 {{--                                        <img src="{{ asset('/') }}frontend/assets/img/testimonial/2.jpg" alt="">--}}
-                                        <img style="height: 70px" src="https://secondhandsongs.com/picture/400821" alt="">
+
+                                        <img style="height: 70px" src="{{ asset('/frontend/assets/img/gas-custom/sara.webp') }}" alt="">
                                     </div>
                                     <div class="author-desc">
                                         <h5>Sarah Haymes</h5><span>Customer</span>

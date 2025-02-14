@@ -87,7 +87,8 @@
                                 <img src="{{ asset('/') }}frontend/assets/img/gas-custom/14.jfif" alt="">
                             </div>
                             <div class="services_icon">
-                                <i class="flaticon-biofuel"></i>
+{{--                                <i class="flaticon-biofuel"></i>--}}
+                                <img src="{{ asset('frontend/assets/img/gas-custom/free-air.png') }}" alt="" style="height: 45px; width: 45px;">
                             </div>
                         </div>
                         <div class="service-content">
@@ -154,7 +155,8 @@
                                 <img src="{{ asset('/') }}frontend/assets/img/gas-custom/13.jpg" alt="" style="min-height: 250px">
                             </div>
                             <div class="services_icon">
-                                <i class="flaticon-car-wash"></i>
+{{--                                <i class="flaticon-car-wash"></i>--}}
+                                <img src="{{ asset('/frontend/assets/img/gas-custom/flat-tire.png') }}" alt="" style="height: 45px; width: 45px;" >
                             </div>
                         </div>
                         <div class="service-content">

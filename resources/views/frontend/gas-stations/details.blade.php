@@ -253,7 +253,7 @@
                 @foreach($station->gasStationEmployees as $key => $employee)
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="single-team-member wow fadeInLeft" data-wow-delay=".2s">
-                            <div class="team-member-bg" style="max-height: 300px; background-image: url({{ asset($employee->profile_image  ?? 'frontend/assets/img/team/1.jpg') }}); ">
+                            <div class="team-member-bg" style="max-height: 300px; background-size: contain; background-image: url({{ asset($employee->profile_image  ?? 'frontend/assets/img/team/1.jpg') }}); ">
                                 <div class="team-content">
                                     <div class="team-title">
                                         <a href="javascript:void(0)">{{ $employee->name }}</a>
@@ -432,7 +432,8 @@
             <div class="col-lg-4 col-md-6 col-sm-12 common-height">
                 <div class="single-serv-item mt-30 wow fadeInLeft" data-wow-delay=".6s">
                     <div class="serv-icon">
-                        <i class="flaticon-gasoline"></i>
+{{--                        <i class="flaticon-gasoline"></i>--}}
+                        <img src="https://t3.ftcdn.net/jpg/04/14/59/14/360_F_414591474_5MMrcBs3RC5cy9CFQ8aP6bmD1AW2oC1j.jpg" style="height: 50px" alt="free-air">
                     </div>
                     <div class="serv-content">
                         <h5>Free Air </h5>
@@ -477,7 +478,8 @@
             <div class="col-lg-4 col-md-6 col-sm-12 common-height">
                 <div class="single-serv-item active mt-30 wow fadeInLeft" data-wow-delay=".6s">
                     <div class="serv-icon">
-                        <i class="flaticon-gasoline"></i>
+{{--                        <i class="flaticon-gasoline"></i>--}}
+                        <img src="{{ asset('/frontend/assets/img/gas-custom/flat-tire.png') }}" alt="flat-tire" style="height: 50px">
                     </div>
                     <div class="serv-content">
                         <h5>Flat Tire</h5>
@@ -496,7 +498,7 @@
     <!-- Achievement Area -->
 
     <div class="skill-area">
-        <div class="skill-bg bg-cover" style="background-image: url({{ asset('frontend/assets/img/gas-custom/16.jpg') }}); background-repeat: no-repeat;">
+        <div class="skill-bg bg-cover" style="background-image: url({{ asset('frontend/assets/img/gas-custom/20.webp') }}); background-repeat: no-repeat;">
             <div class="overlay">
             </div>
 {{--            <div class="pop-up-video">--}}
@@ -639,7 +641,7 @@
                                 <div class="testimonial-author">
                                     <div class="author-img">
                                         {{--                                        <img src="{{ asset('/') }}frontend/assets/img/testimonial/2.jpg" alt="">--}}
-                                        <img style="height: 70px" src="https://secondhandsongs.com/picture/400821" alt="">
+                                        <img style="height: 70px" src="{{ asset('/frontend/assets/img/gas-custom/sara.webp') }}" alt="">
                                     </div>
                                     <div class="author-desc">
                                         <h5>Sarah Haymes</h5><span>Customer</span>
