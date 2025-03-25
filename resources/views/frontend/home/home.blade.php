@@ -73,7 +73,10 @@
                         <img src="{{ asset('/') }}frontend/assets/img/gas-custom/10.png" alt="">
 
                         <div class="experience-wrap">
-                            <img src="{{ asset('/') }}frontend/assets/img/electric-station.png" alt="">
+                            {{-- <img src="{{ asset('/') }}frontend/assets/img/electric-station.png" alt=""> --}}
+                            <div class="serv-icon">
+                            <i class="flaticon-petrol"></i>
+                        </div>
                             <span>13+</span>
                             <p>Year of Experience</p>
                         </div>
@@ -98,40 +101,38 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-{{--                        <div class="single-team-member wow fadeInLeft" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">--}}
-{{--                            <div>--}}
-{{--                                <div id="treeExample"></div>--}}
+                        <div class="single-team-member wow fadeInLeft" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                           <div>
+                                <div id="treeExample"></div>
 
 
 {{--                                --}}{{--                            css tree start--}}
-{{--                                @foreach($stations as $index => $station)--}}
-{{--                                <ol class="organizational-chart mt-3">--}}
+                                @foreach($stations as $index => $station)
+                                <ol class="organizational-chart mt-3">
 
-{{--                                        <li>--}}
-{{--                                            <div>--}}
-{{--                                                <h2><a href="{{ route('gas-details', ['slug' => $station->slug]) }}" class="nav-link">{{ $station->name ?? 'Parent station' }}</a></h2>--}}
-{{--                                            </div>--}}
-{{--                                            @if(isset($station->gasStations) && count($station->gasStations) > 0)--}}
-{{--                                                <ol>--}}
-{{--                                                    @foreach($station->gasStations as $key => $gasStation)--}}
-{{--                                                        @include('frontend.gas-stations.include-tree-view', ['childGasStation' => $gasStation])--}}
-{{--                                                    @endforeach--}}
-{{--                                                </ol>--}}
-{{--                                            @endif--}}
-{{--                                        </li>--}}
+                                        <li>
+                                            <div>
+                                                <h2><a href="{{ route('gas-details', ['slug' => $station->slug]) }}" class="nav-link" style="font-size:16px">{{ $station->name ?? 'Parent station' }}</a></h2>
+                                            </div>
+                                            @if(isset($station->gasStations) && count($station->gasStations) > 0)
+                                                <ol>
+                                                    @foreach($station->gasStations as $key => $gasStation)
+                                                       @include('frontend.gas-stations.include-tree-view', ['childGasStation' => $gasStation])
+                                                    @endforeach
+                                                </ol>
+                                            @endif
+                                        </li>
 
-{{--                                </ol>--}}
-{{--                                @endforeach--}}
-{{--                                --}}{{--                            css tree ends--}}
-
-
-
-
-{{--                            </div>--}}
-{{--                        </div>--}}
-                        <div class="card border-0">
-                            <img src="{{ asset('/frontend/assets/img/gas-custom/gas-tree.jpg') }}" alt="" class="card-img-top" style="min-height: 500px;">
+                                </ol>
+                                @endforeach
+                                
+{{--                            css tree ends--}}
+                           </div>
                         </div>
+
+{{--                        <div class="card border-0"> --}}
+{{--                            <img src="{{ asset('/frontend/assets/img/gas-custom/gas-tree.jpg') }}" alt="" class="card-img-top" style="min-height: 500px;"> --}}
+ {{--                       </div> --}}
 
                     </div>
                 </div>
@@ -202,8 +203,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 common-height">
                     <div class="single-serv-item active mt-30 wow fadeInLeft" data-wow-delay=".6s">
+                        <!--<div class="serv-icon">-->
+                        <!--    <i class="flaticon-charging-station"></i>-->
+                        <!--</div>-->
                         <div class="serv-icon">
-                            <i class="flaticon-charging-station"></i>
+                            <img src="https://static.vecteezy.com/system/resources/thumbnails/013/468/392/small_2x/clock-time-line-icon-png.png" class="" style="height:50px" />
                         </div>
                         <div class="serv-content">
                             <h5>10 min Oil Change services</h5>
@@ -374,19 +378,20 @@
                 @foreach($employees as $key => $employee)
                     <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="single-team-member wow fadeInLeft" data-wow-delay=".2s">
-                            <div class="team-member-bg" style="max-height: 300px; background-image: url({{ asset($employee->profile_image  ?? 'frontend/assets/img/team/1.jpg') }}); ">
+                            <div class="team-member-bg" style="max-height: 350px;  background-size: contain; background-image: url({{ asset($employee->profile_image  ?? 'frontend/assets/img/team/1.jpg') }}); ">
                                 <div class="team-content">
                                     <div class="team-title">
                                         <a href="javascript:void(0)">{{ $employee->name }}</a>
                                     </div>
                                     <div class="team-subtitle">
-{{--                                        <p>{{ $employee->gasStationEmployeeRoles[0]->name ?? 'Role Name' }}</p>--}}
+                                        {{--<p>{{ $employee->gasStationEmployeeRoles[0]->name ?? 'Role Name' }}</p>--}}
                                         <p>
                                             @foreach($employee->gasStationEmployeeRoles as $key => $role)
                                                 {{ $role->name }}{{ $key+1 < count($employee->gasStationEmployeeRoles) ? ', ' : '' }}
 
                                             @endforeach
                                         </p>
+                                        
                                     </div>
                                 </div>
                                 <div class="team-social">

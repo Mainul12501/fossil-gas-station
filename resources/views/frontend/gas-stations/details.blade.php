@@ -53,7 +53,10 @@
                         <img src="{{ asset($station->main_image ?? 'frontend/assets/img/gas-custom/11.jpg') }}" alt="{{ $station->name ?? '' }}" style="max-height: 665px; width: 100%!important;">
 
                         <div class="experience-wrap">
-                            <img src="{{ asset('/') }}frontend/assets/img/electric-station.png" alt="">
+{{--                            <img src="{{ asset('/') }}frontend/assets/img/electric-station.png" alt="">--}}
+                            <div class="serv-icon">
+                                <i class="flaticon-petrol"></i>
+                            </div>
                             <span>{{ round(\Illuminate\Support\Carbon::parse($station->incorporated_year)->diffInYears(now())) ?? 0 }}+</span>
                             <p>Year of Experience</p>
                         </div>
@@ -447,7 +450,8 @@
             <div class="col-lg-4 col-md-6 col-sm-12 common-height">
                 <div class="single-serv-item active mt-30 wow fadeInLeft" data-wow-delay=".6s">
                     <div class="serv-icon">
-                        <i class="flaticon-charging-station"></i>
+                        <!--<i class="flaticon-charging-station"></i>-->
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/013/468/392/small_2x/clock-time-line-icon-png.png" class="" style="height:50px" />
                     </div>
                     <div class="serv-content">
                         <h5>10 min Oil Change services</h5>

@@ -109,7 +109,8 @@
                                 <img src="{{ asset('/') }}frontend/assets/img/gas-custom/6.jpeg" alt="">
                             </div>
                             <div class="services_icon">
-                                <i class="flaticon-charging-station"></i>
+                                <!--<i class="flaticon-charging-station"></i>-->
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/013/468/392/small_2x/clock-time-line-icon-png.png" class="" style="height:50px" />
                             </div>
                         </div>
 

@@ -40,27 +40,50 @@
                                         <li class="nav-item">
                                             <a class="nav-link {{ request()->is('services') ? 'active' : '' }}" href="{{ route('career') }}">Career</a>
                                         </li>
+
                                         @foreach($gasStations as $key => $gasStation)
                                             <li class="nav-item">
                                                 <a class="nav-link" href="{{ route('gas-details', ['slug' => $gasStation->slug]) }}">{{ $gasStation->name ?? 'station Name' }}
-                                                    <span class="sub-nav-toggler">
- 													</span>
+                                                    <span class="sub-nav-toggler"></span>
                                                 </a>
                                                 @if(count($gasStation->gasStations) > 0)
                                                     <ul class="sub-menu">
                                                         @foreach($gasStation->gasStations as $childGasStation)
                                                             <li>
-                                                                <a href="{{ route('gas-details', ['slug' => $childGasStation->slug]) }}">{{ $childGasStation->name }}</a>
-{{--                                                                <ul class="sub-menu">--}}
-{{--                                                                    <li><a href="choose-us.html">Sub Station 2</a></li>--}}
-{{--                                                                </ul>--}}
-                                                            </li>
+                                                                <div class="sub-menu-container"> <a href="{{ route('gas-details', ['slug' => $childGasStation->slug]) }}" class="has-child">{{ $childGasStation->name }}</a>
+                                                                    @if(isset($childGasStation->gasStations))
+                                                                        <ul class="sub-menu sub-menu-2">
+                                                                            @foreach($childGasStation->gasStations as $lastGasStation)
+                                                                                <li><a href="{{ route('gas-details', ['slug' => $lastGasStation->slug]) }}">{{ $lastGasStation->name ?? '' }}</a></li>
+                                                                            @endforeach
+                                                                        </ul>
+                                                                    @endif
+                                                                </div> </li>
                                                         @endforeach
-
                                                     </ul>
                                                 @endif
                                             </li>
                                         @endforeach
+
+                                        <style>
+                                            .sub-menu-2 {
+                                                display: none;
+                                                left: 100%; /* Adjust as needed */
+                                                position: absolute;
+                                                top: 0!important;
+                                                background: white; /* Add background for visibility */
+                                                padding: 5px;
+                                                z-index: 1000;
+                                            }
+                                            .sub-menu-container:hover .sub-menu-2 {
+                                                display: block !important;
+                                                visibility: visible;
+                                            }
+                                            .sub-menu-container {
+                                                position: relative;
+                                            }
+                                        </style>
+
                                         <li class="nav-item">
                                             <a class="nav-link {{ request()->is('contact-us') ? 'active' : '' }}" href="{{ route('locations') }}">Locations</a>
                                         </li>
