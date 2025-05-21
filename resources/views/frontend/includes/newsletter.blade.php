@@ -2,7 +2,7 @@
     <div class="container">
         <div class="newsletter-content d-flex align-items-center justify-content-between">
             <div class="section-title">
-                <h2 class="text-white">Subscribe newsletter <br> For Any Update</h2>
+                <h2 class="text-white" style="font-size: 45px;">Subscribe Jamuna-CA Inc. <br> For Any Update</h2>
             </div>
             <div class="subscribed-form d-flex">
                 <form action="{{ route('newsletters.store') }}" method="post">

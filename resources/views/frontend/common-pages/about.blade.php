@@ -35,7 +35,7 @@
                         <div class="section-title">
                             <h6>About Us</h6>
 {{--                            <h2>We're the Top <br><b>Filling Station</b> in Downdown</h2>--}}
-                            <h2>We are the <br><b>Cheapest Filling Station</b> in this area</h2>
+                            <h2 style="font-size: 50px;">We are the <br><b>Cheapest Filling Station</b> in this area **</h2>
                         </div>
                         <p style="text-align: justify">JAMUNA-CA INC. is your trusted partner for all your fueling and convenience needs. Whether you’re on a long road trip or just getting around town, our 24/7 stations and commitment to the best quality fuel, fair pricing, and extra customer perks ensure you’ll always have a reliable place to stop. Visit us today and experience the difference at JAMUNA-CA INC. </p>
                         <div class="row">
@@ -48,9 +48,13 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <h4>100% Pure Oil</h4>
-                                            <p style="text-align: justify">Experience the power of 100% Pure Oil at our gas station and feel the difference in your vehicle's performance.</p>
+                                            <h4>Top Tier Detergent Gasoline</h4>
+                                            <p style="text-align: justify">Jamuna-CA Inc. gasoline is a Top Tier detergent gasoline, meaning it contains at least 30% more detergent than the minimum specified by the Top Tier standard. This helps to keep engine fuel injectors and valves clean, potentially improving fuel efficiency and engine performance.</p>
                                         </div>
+{{--                                        <div class="col-lg-12">--}}
+{{--                                            <h4>100% Pure Oil</h4>--}}
+{{--                                            <p style="text-align: justify">Experience the power of 100% Pure Oil at our gas station and feel the difference in your vehicle's performance.</p>--}}
+{{--                                        </div>--}}
                                     </div>
                                 </div>
                             </div>
@@ -63,9 +67,13 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
-                                            <h4>Accurate Meter</h4>
-                                            <p style="text-align: justify;">we ensure every drop counts with an Accurate Meter system, delivering honest and precise fuel measurements you can trust.</p>
+                                            <h4>Customer Satisfaction</h4>
+                                            <p style="text-align: justify;">Jamuna-CA Inc. stations strive to provide a high-quality fuel and customer satisfaction experience.</p>
                                         </div>
+{{--                                        <div class="col-lg-12">--}}
+{{--                                            <h4>Accurate Meter</h4>--}}
+{{--                                            <p style="text-align: justify;">we ensure every drop counts with an Accurate Meter system, delivering honest and precise fuel measurements you can trust.</p>--}}
+{{--                                        </div>--}}
                                     </div>
                                 </div>
                             </div>
